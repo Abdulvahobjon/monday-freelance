@@ -26,3 +26,9 @@
     color: #202020;
     border-bottom: 2px solid var(--accent-blue, #4790FF)
 }
+
+.btn_active{
+    color: #4790FF;
+    border: 1px solid var(--stroke-light, #F2F2F2);
+    background-color: var(--fill-light-blue, #EDF4FF);
+}
