@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <header class="pt-8 pb-5">
+        <div class="max-w-[1360px] px-5 mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2.5 max-w-[600px] w-full">
+                <a class="text-[#202020] font-bold text-base uppercase select-none" href="index.html">MONDAY</a>
+                <button
+                    class="py-3.5 px-2.5 inline-flex items-center gap-1.5 bg-[#FAFAFC] rounded-xl text-[#B7C3D6] uppercase font-medium text-base active:opacity-80 transition-all">
+                    <img src="./img/header/global.svg" alt="global">
+                    <p>Uz</p>
+                    <span>
+                        <svg class="flex" width="12" height="6" viewBox="0 0 12 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.50391 1L6.00391 5L10.5039 1" stroke="#B7C3D6" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </button>
+
+                <div class="flex items-center justify-between max-w-[316px] w-full h-11 px-4 rounded-full bg-[#FAFAFC]">
+                    <input id="search" placeholder="Search for services..."
+                        class="placeholder:text-[#9CA5B3] placeholder:font-medium placeholder:text-sm text-[#9CA5B3] font-medium text-sm outline-none border-none bg-transparent max-w-[250px] w-full"
+                        type="text">
+                    <label for="search" class="cursor-pointer flex"><img src="./img/header/search.svg"
+                            alt="search"></label>
+                </div>
+            </div>
+            <div class="flex items-center gap-10">
+                <div>
+                    <ul class="flex items-center gap-6">
+                        <li><a href="#" class="text-[#9CA5B3] font-bold text-base animated-underline">Orders</a></li>
+                        <li><a href="#" class="text-[#9CA5B3] font-bold text-base animated-underline">Projects</a></li>
+                        <li><a href="#" class="text-[#9CA5B3] font-bold text-base animated-underline">Sellers</a></li>
+                        <li><a href="#"
+                                class="text-[#9CA5B3] font-bold text-base flex items-center gap-1.5 animated-underline"><span><img
+                                        class="flex" src="./img/header/lovely.svg" alt="lovely"></span>Favorites</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-5">
+                    <a class="relative" href="#"><img src="./img/header/bag.svg" alt="bag">
+                        <div
+                            class="rounded-full text-white font-bold text-[8px] min-w-[14px] min-h-[14px] flex items-center justify-center bg-[#4790FF] absolute top-[-5px] right-[-7px] border-white border">
+                            2</div>
+                    </a>
+                    <a class="relative" href="#"><img src="./img/header/message.svg" alt="message">
+                        <div
+                            class="rounded-full text-white font-bold text-[8px] min-w-[14px] min-h-[14px] flex items-center justify-center bg-[#FF8E8E] absolute top-[-5px] right-[-7px] border-white border">
+                            2</div>
+                    </a>
+                    <a class="relative" href="#"><img src="./img/header/notification.svg" alt="notification">
+                        <div
+                            class="rounded-full text-white font-bold text-[8px] min-w-[14px] min-h-[14px] flex items-center justify-center bg-[#3bbe1a] absolute top-[-5px] right-[-7px] border-white border">
+                            2</div>
+                    </a>
+                </div>
+                <div class="flex gap-1">
+                    <a class="hover:opacity-80 transition-all" href="#"><img src="./img/header/wallet.svg"
+                            alt="wallet"></a>
+                    <button class="flex items-center relative cursor-pointer">
+                        <img class="max-w-11 w-full flex" src="./img/header/avatar.png" alt="avatar">
+                        <div
+                            class="w-2.5 h-2.5 rounded-full border border-white bg-[#62F94D] absolute bottom-0 right-[25px]">
+                        </div>
+                        <img class="flex" src="./img/header/expand.svg" alt="expand">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-[1360px] px-5 mx-auto pt-5">
+            <ul class="flex items-center justify-between">
+                <li><a id="header_item" class="header_active py-3 px-2 text-[#9CA5B3] font-medium text-base"
+                        href="#">Social & SMM</a></li>
+                <li><a id="header_item"
+                        class="py-3 px-2 text-[#9CA5B3] font-medium text-base border-b-[2px] border-b-transparent"
+                        href="#">SEO</a></li>
+                <li><a id="header_item"
+                        class="py-3 px-2 text-[#9CA5B3] font-medium text-base border-b-[2px] border-b-transparent"
+                        href="#">Copywriting</a></li>
+                <li><a id="header_item"
+                        class="py-3 px-2 text-[#9CA5B3] font-medium text-base border-b-[2px] border-b-transparent"
+                        href="#">Web Development</a></li>
+                <li><a id="header_item"
+                        class="py-3 px-2 text-[#9CA5B3] font-medium text-base border-b-[2px] border-b-transparent"
+                        href="#">Scripts & Telegram Bots</a></li>
+                <li><a id="header_item"
+                        class="py-3 px-2 text-[#9CA5B3] font-medium text-base border-b-[2px] border-b-transparent"
+                        href="#">Logotypes & Branding</a></li>
+                <li><a id="header_item"
+                        class="py-3 px-2 text-[#9CA5B3] font-medium text-base border-b-[2px] border-b-transparent"
+                        href="#">Web & Mobile Design</a></li>
+                <li><a id="header_item"
+                        class="py-3 px-2 text-[#9CA5B3] font-medium text-base border-b-[2px] border-b-transparent"
+                        href="#">Scripts & Bots</a></li>
+                <li class="flex items-center border-l pl-2" ><button
+                        class=" py-3 px-2 text-[#9CA5B3] font-medium text-base border-b-[2px] border-b-transparent"
+                        href="#">All Services</button><img src="./img/header/expand.svg" alt="expand"></li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        let header_items = document.querySelectorAll('#header_item');
+
+        header_items.forEach(function (item, index) {
+            item.addEventListener('click', function () {
+                header_items.forEach(function (item) {
+                    item.classList.remove('header_active');
+                });
+
+                item.classList.add('header_active');
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
