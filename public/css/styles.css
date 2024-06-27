@@ -713,9 +713,6 @@ video {
 .max-w-\[1320px\] {
   max-width: 1320px;
 }
-.max-w-\[1360px\] {
-  max-width: 1360px;
-}
 .max-w-\[1400px\] {
   max-width: 1400px;
 }
@@ -754,6 +751,18 @@ video {
 }
 .max-w-\[985px\] {
   max-width: 985px;
+}
+.max-w-\[140px\] {
+  max-width: 140px;
+}
+.max-w-\[1420px\] {
+  max-width: 1420px;
+}
+.max-w-\[1360px\] {
+  max-width: 1360px;
+}
+.max-w-\[1370px\] {
+  max-width: 1370px;
 }
 .rotate-180 {
   --tw-rotate: 180deg;
