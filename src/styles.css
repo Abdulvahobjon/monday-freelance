@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'satoshi' , sans-serif;
+    src: url(../public/Fonts/OTF/Satoshi-Medium.otf);
+}
+body{
+    font-family: 'satoshi' , sans-serif;
+}
+
 .animated-underline {
     position: relative;
     transition: transform 0.3s ease;
@@ -31,4 +39,10 @@
     color: #4790FF;
     border: 1px solid var(--stroke-light, #F2F2F2);
     background-color: var(--fill-light-blue, #EDF4FF);
+}
+.gradient_btn{
+    background: linear-gradient(90deg, #6AB8FF 0%, #DEF5FF 136.52%);
+}
+.transition-height {
+    transition: height 0.3s ease;
 }
