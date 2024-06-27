@@ -32,3 +32,6 @@
     border: 1px solid var(--stroke-light, #F2F2F2);
     background-color: var(--fill-light-blue, #EDF4FF);
 }
+.gradient_btn{
+    background: linear-gradient(90deg, #6AB8FF 0%, #DEF5FF 136.52%);
+}
