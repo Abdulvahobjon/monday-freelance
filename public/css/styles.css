@@ -1061,7 +1061,7 @@ video {
     src: url(../public/Fonts/OTF/Satoshi-Medium.otf);
 }
 body{
-    font-family: 'satoshi' sans-serif;
+    font-family: 'satoshi' , sans-serif;
 }
 
 .animated-underline {
