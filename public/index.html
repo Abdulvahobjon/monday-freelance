@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="bg-[#F1F3F9]" >
+<body class="bg-[#F1F3F9]">
 
-    <header class="pt-8 bg-white">
+    <header class="lg:pt-8 bg-white">
         <div class="max-w-[1360px] px-5 mx-auto lg:flex hidden items-center justify-between">
             <div class="flex items-center gap-2.5 max-w-[600px] w-full">
                 <a class="text-[#202020] font-bold text-base uppercase select-none" href="index.html">MONDAY</a>
@@ -110,7 +110,8 @@
         </div>
 
 
-        <div class="lg:hidden max-w-[1360px] px-5 mx-auto w-full flex items-center gap-2 justify-between">
+        <div
+            class="lg:hidden pt-12 pb-5 max-w-[1360px] pt- px-5 mx-auto w-full flex items-center gap-2 justify-between">
             <button><img src="./img/header/burger.svg" alt="burger"></button>
             <a class="text-[#202020] font-bold text-sm" href="#">MONDAY</a>
             <button
@@ -144,7 +145,7 @@
 
     </script>
 
-    <section>
+    <!-- <section>
         <div class="bg-cover bg-no-repeat h-[260px]" style="background-image: url(./img/hero/banner.png);"></div>
         <div class="rounded-3xl px-5 mx-auto flex items-center gap-7 p-9 bg-white max-w-[985px]">
             <div>
@@ -410,11 +411,191 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section class="pt-5">
+        <h2 class="max-w-[1360px] px-5 mx-auto text-[#202020] font-bold text-2xl mb-4 md:block hidden">Prices for
+            services</h2>
+        <div class="max-w-[1360px] px-5 mx-auto">
+            <div class="bg-white rounded-3xl pb-4 md:block hidden">
+                <div class="lg:flex grid grid-cols-2 items-center pt-8 pb-4 w-full">
+                    <div class="">
+                        <p class="text-[#9CA5B3] font-bold text-sm mb-4 pl-14 lg:mt-0 mt-3">Service</p>
+                        <div class="px-14 py-5 lg:border-r lg:border-l-0 lg:border-top border">
+                            <div class="flex items-center gap-2 max-w-[269px] w-full p-2 border rounded-xl mb-[47.5px]">
+                                <span class="p-3 border rounded-xl">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.655 4.90529L12.3525 2.60278C11.6475 1.89778 10.695 1.50781 9.69749 1.50781H6C3.75 1.50781 2.25 3.00781 2.25 5.25781V12.7578C2.25 15.0078 3.75 16.5078 6 16.5078H12C14.25 16.5078 15.75 15.0078 15.75 12.7578V7.56032C15.75 6.55532 15.3525 5.60279 14.655 4.90529Z"
+                                            stroke="#4790FF" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M7.125 10.5L5.625 12L7.125 13.5" stroke="#4790FF" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.875 10.5L12.375 12L10.875 13.5" stroke="#4790FF" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <p class="text-[#202020] font-bold text-xs">Creation and <br> improvement of sites
+                                </p>
+                            </div>
+                            <div class="relative">
+                                <span class="absolute left-5 top-[-20px] ">
+                                    <svg width="16" height="34" viewBox="0 0 16 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 34C15.2761 34 15.5 33.7761 15.5 33.5C15.5 33.2239 15.2761 33 15 33V34ZM0.5 0.5V21.5H1.5V0.5H0.5ZM13 34H15V33H13V34ZM0.5 21.5C0.5 28.4036 6.09644 34 13 34V33C6.64873 33 1.5 27.8513 1.5 21.5H0.5Z"
+                                            fill="#F2F2F2" />
+                                    </svg>
+                                </span>
+                                <p class="text-[#202020] font-bold text-xs lg:text-sm pl-12">Improving and adjusting the
+                                    <br>
+                                    site
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <p class="text-[#9CA5B3] font-bold text-sm mb-4 pl-14 lg:mt-0 mt-3">Price range</p>
+                        <div class="flex flex-col  gap-11 py-12 px-14 lg:border-r lg:border-l-0 lg:border-top border">
+                            <p class="text-[#202020] font-bold text-sm lg:text-base ">100000 <span
+                                    class="text-[#9CA5B3]">-</span> 150000 <span
+                                    class="text-[#9CA5B3] uppercase">UZS</span></p>
+                            <p class="text-[#202020] font-bold text-sm lg:text-base ">100000 <span
+                                    class="text-[#9CA5B3]">-</span> 150000 <span
+                                    class="text-[#9CA5B3] uppercase">UZS</span></p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <p class="text-[#9CA5B3] font-bold text-sm mb-4 pl-14 lg:mt-0 mt-3">Price per hour</p>
+                        <div class="flex flex-col gap-11 py-12 px-14 lg:border-r lg:border-l-0 lg:border-top border">
+                            <p class="text-[#202020] font-bold text-sm lg:text-base ">100000 <span
+                                    class="text-[#9CA5B3] uppercase">UZS</span></p>
+                            <p class="text-[#202020] font-bold text-sm lg:text-base ">100000 <span
+                                    class="text-[#9CA5B3] uppercase">UZS</span></p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <p class="text-[#9CA5B3] font-bold text-sm mb-4 pl-14 lg:mt-0 mt-3">Minimal budget</p>
+                        <div class="flex flex-col gap-11 py-12 px-14 lg:border-r lg:border-l-0 lg:border-top border">
+                            <p class="text-[#202020] font-bold text-sm lg:text-base ">100000 <span
+                                    class="text-[#9CA5B3] uppercase">UZS</span></p>
+                            <p class="text-[#202020] font-bold text-sm lg:text-base ">100000 <span
+                                    class="text-[#9CA5B3] uppercase">UZS</span></p>
+                        </div>
+                    </div>
+
+                    <div class="w-full lg:max-w-[291px]">
+                        <p class="text-[#9CA5B3] font-bold text-sm mb-4 pl-14 lg:mt-0 mt-3">Description</p>
+                        <div
+                            class="pt-[128px] pb-9 pl-11 px-14 lg:border-r-0 lg:border-l-0 lg:border-top border w-full">
+                            <p>Lorem ipusm</p>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="flex ml-auto mr-6 items-center gap-1 py-4 px-8 bg-[#EDF4FF] rounded-xl text-[#4790FF] font-medium text-base">
+                    <span>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 11.25C10.2426 11.25 11.25 10.2426 11.25 9C11.25 7.75736 10.2426 6.75 9 6.75C7.75736 6.75 6.75 7.75736 6.75 9C6.75 10.2426 7.75736 11.25 9 11.25Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M1.5 9.66105V8.34105C1.5 7.56105 2.1375 6.91605 2.925 6.91605C4.2825 6.91605 4.8375 5.95605 4.155 4.77855C3.765 4.10355 3.9975 3.22605 4.68 2.83605L5.9775 2.09355C6.57 1.74105 7.335 1.95105 7.6875 2.54355L7.77 2.68605C8.445 3.86355 9.555 3.86355 10.2375 2.68605L10.32 2.54355C10.6725 1.95105 11.4375 1.74105 12.03 2.09355L13.3275 2.83605C14.01 3.22605 14.2425 4.10355 13.8525 4.77855C13.17 5.95605 13.725 6.91605 15.0825 6.91605C15.8625 6.91605 16.5075 7.55355 16.5075 8.34105V9.66105C16.5075 10.4411 15.87 11.0861 15.0825 11.0861C13.725 11.0861 13.17 12.0461 13.8525 13.2236C14.2425 13.9061 14.01 14.7761 13.3275 15.1661L12.03 15.9086C11.4375 16.2611 10.6725 16.0511 10.32 15.4586L10.2375 15.3161C9.5625 14.1386 8.4525 14.1386 7.77 15.3161L7.6875 15.4586C7.335 16.0511 6.57 16.2611 5.9775 15.9086L4.68 15.1661C3.9975 14.7761 3.765 13.8986 4.155 13.2236C4.8375 12.0461 4.2825 11.0861 2.925 11.0861C2.1375 11.0861 1.5 10.4411 1.5 9.66105Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    Edit Prices</button>
+            </div>
+        </div>
+
+        <div class="px-5 md:hidden block">
+            <h3 class="text-[#202020] font-bold text-base mb-1">Prices for services</h3>
+            <div class="p-4 bg-[#FAFAFC] rounded-3xl ">
+                <div id="toggle__btn" class="flex justify-between py-2.5 px-2 items-center border rounded-xl bg-white mb-1 cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <span class="p-3 bg-white border rounded-xl">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.655 4.90529L12.3525 2.60278C11.6475 1.89778 10.695 1.50781 9.69749 1.50781H6C3.75 1.50781 2.25 3.00781 2.25 5.25781V12.7578C2.25 15.0078 3.75 16.5078 6 16.5078H12C14.25 16.5078 15.75 15.0078 15.75 12.7578V7.56032C15.75 6.55532 15.3525 5.60279 14.655 4.90529Z" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.125 10.5L5.625 12L7.125 13.5" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.875 10.5L12.375 12L10.875 13.5" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <p class="text-[#202020] font-bold text-xs ">Creation and <br> improvement of sites</p>
+                    </div>
+                    <button id="toggle__icon">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-300">
+                            <path d="M8 11L12.5 15L17 11" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="toggle_info" class="max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-4 rounded-xl mb-1 bg-white">
+                        <div class="flex items-center gap-2 pb-2.5 border-b">
+                            <span class="p-3 border rounded-xl">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.655 4.90529L12.3525 2.60278C11.6475 1.89778 10.695 1.50781 9.69749 1.50781H6C3.75 1.50781 2.25 3.00781 2.25 5.25781V12.7578C2.25 15.0078 3.75 16.5078 6 16.5078H12C14.25 16.5078 15.75 15.0078 15.75 12.7578V7.56032C15.75 6.55532 15.3525 5.60279 14.655 4.90529Z" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.125 10.5L5.625 12L7.125 13.5" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.875 10.5L12.375 12L10.875 13.5" stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <p class="text-[#202020] font-bold text-xs">Creation and <br> improvement of sites</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">Description</p>
+                                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b ">Lorem ipusm</li>
+                                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">Price range</p>
+                                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b ">100000 <span class="text-[#9CA5B3]">-</span> 150000 <span class="text-[#9CA5B3] uppercase">UZS</span></li>
+                                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">Price per hour</p>
+                                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">100000 <span class="uppercase text-[#9CA5B3]">UZS</span></li>
+                                <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">Minimal budget</p>
+                                <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">100000 <span class="uppercase text-[#9CA5B3]">UZS</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white">
+                        <ul>
+                            <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">Service</p>
+                            <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b ">Improving and adjusting the site</li>
+                            <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">Description</p>
+                            <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">Lorem ipusm</li>
+                            <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">Price range</p>
+                            <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b ">100000 <span class="text-[#9CA5B3]">-</span> 150000 <span class="text-[#9CA5B3] uppercase">UZS</span></li>
+                            <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">Price per hour</p>
+                            <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">100000 <span class="uppercase text-[#9CA5B3]">UZS</span></li>
+                            <p class="text-[#9CA5B3] font-bold text-xs mb-1 pt-2.5 uppercase">Minimal budget</p>
+                            <li class="text-[#202020] font-bold text-sm lg:text-base pb-2.5 border-b">100000 <span class="uppercase text-[#9CA5B3]">UZS</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button
+                    class="text-[#4790FF] hover:opacity-80 active:scale-95 transition-all font-medium text-base flex items-center w-full justify-center rounded-xl gap-1 bg-[#EDF4FF] py-4">
+                    <span>
+                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.5 11.25C10.7426 11.25 11.75 10.2426 11.75 9C11.75 7.75736 10.7426 6.75 9.5 6.75C8.25736 6.75 7.25 7.75736 7.25 9C7.25 10.2426 8.25736 11.25 9.5 11.25Z"
+                                stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M2 9.66105V8.34105C2 7.56105 2.6375 6.91605 3.425 6.91605C4.7825 6.91605 5.3375 5.95605 4.655 4.77855C4.265 4.10355 4.4975 3.22605 5.18 2.83605L6.4775 2.09355C7.07 1.74105 7.835 1.95105 8.1875 2.54355L8.27 2.68605C8.945 3.86355 10.055 3.86355 10.7375 2.68605L10.82 2.54355C11.1725 1.95105 11.9375 1.74105 12.53 2.09355L13.8275 2.83605C14.51 3.22605 14.7425 4.10355 14.3525 4.77855C13.67 5.95605 14.225 6.91605 15.5825 6.91605C16.3625 6.91605 17.0075 7.55355 17.0075 8.34105V9.66105C17.0075 10.4411 16.37 11.0861 15.5825 11.0861C14.225 11.0861 13.67 12.0461 14.3525 13.2236C14.7425 13.9061 14.51 14.7761 13.8275 15.1661L12.53 15.9086C11.9375 16.2611 11.1725 16.0511 10.82 15.4586L10.7375 15.3161C10.0625 14.1386 8.9525 14.1386 8.27 15.3161L8.1875 15.4586C7.835 16.0511 7.07 16.2611 6.4775 15.9086L5.18 15.1661C4.4975 14.7761 4.265 13.8986 4.655 13.2236C5.3375 12.0461 4.7825 11.0861 3.425 11.0861C2.6375 11.0861 2 10.4411 2 9.66105Z"
+                                stroke="#4790FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    Edit Prices
+                </button>
+            </div>
+        </div>
     </section>
 
-
-
-
+    <script src="./js/app.js"></script>
     <script src="./js/text.js"></script>
 </body>
 
