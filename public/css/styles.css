@@ -586,6 +586,9 @@ video {
 .hidden {
   display: none;
 }
+.h-0 {
+  height: 0px;
+}
 .h-11 {
   height: 2.75rem;
 }
@@ -597,9 +600,6 @@ video {
 }
 .h-\[260px\] {
   height: 260px;
-}
-.h-0 {
-  height: 0px;
 }
 .max-h-0 {
   max-height: 0px;
@@ -1054,6 +1054,14 @@ video {
 }
 .duration-300 {
   transition-duration: 300ms;
+}
+
+@font-face {
+    font-family: 'satoshi' , sans-serif;
+    src: url(../public/Fonts/OTF/Satoshi-Medium.otf);
+}
+body{
+    font-family: 'satoshi' sans-serif;
 }
 
 .animated-underline {
