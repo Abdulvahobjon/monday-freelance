@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body class="text-[#202020] bg-[#ECEEF4]">
+  <section>
+    <div class="h-[229px] md:h-[260px] bg-cover bg-center" style="background-image: url(./img/banner.png)"></div>
+    <div class="hidden max-w-[1400px] mx-auto px-5 lg:flex justify-between gap-2.5 -mt-[108px]">
+      <div class="max-w-[985px] w-full bg-white rounded-3xl pt-3 pl-6 pb-[26px] pr-[38px] flex gap-[26px]">
+        <div class="max-w-[248px] w-full -mt-11">
+          <div class="flex items-center justify-center max-w-[248px] mb-4">
+            <div class="border-[5px] border-white w-[152px] rounded-full h-[152px]">
+              <img class="object-cover w-full h-full rounded-full" src="./img/person.jpg" alt="" />
+            </div>
+          </div>
+          <div class="px-3 pt-5 pb-2.5 bg-white rounded-3xl border border-[#F1F3F9]">
+            <h3 class="text-center font-bold text-base mb-[14px] leading-[21.6px]">
+              @James_K
+            </h3>
+            <ul class="flex flex-col gap-2 mb-7">
+              <li class="flex items-center gap-3">
+                <span class="w-8 h-8 bg-[#FAFAFC] rounded-[8px] flex items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.86762 1.67254L4.12512 3.08254C3.26262 3.40504 2.55762 4.42504 2.55762 5.34004V10.9125C2.55762 11.7975 3.14262 12.96 3.85512 13.4925L7.08012 15.9C8.13762 16.695 9.87762 16.695 10.9351 15.9L14.1601 13.4925C14.8726 12.96 15.4576 11.7975 15.4576 10.9125V5.34004C15.4576 4.41754 14.7526 3.39754 13.8901 3.07504L10.1476 1.67254C9.51012 1.44004 8.49012 1.44004 7.86762 1.67254Z"
+                      stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.7876 8.90251L7.9951 10.11L11.2201 6.88501" stroke="#4790FF" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></span>
+                <b class="font-bold text-sm leading-5">Identity confirmed</b>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-8 h-8 bg-[#FAFAFC] rounded-[8px] flex items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                      stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M5.99922 2.25H6.74922C5.28672 6.63 5.28672 11.37 6.74922 15.75H5.99922" stroke="#575E6A"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11.25 2.25C12.7125 6.63 12.7125 11.37 11.25 15.75" stroke="#575E6A" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2.25 12V11.25C6.63 12.7125 11.37 12.7125 15.75 11.25V12" stroke="#575E6A"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2.25 6.74922C6.63 5.28672 11.37 5.28672 15.75 6.74922" stroke="#575E6A" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <b class="font-bold text-sm leading-5">RUS, UZ, ENG</b>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-8 h-8 bg-[#FAFAFC] rounded-[8px] flex items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.00016 10.0706C10.2925 10.0706 11.3402 9.02297 11.3402 7.73063C11.3402 6.43828 10.2925 5.39062 9.00016 5.39062C7.70781 5.39062 6.66016 6.43828 6.66016 7.73063C6.66016 9.02297 7.70781 10.0706 9.00016 10.0706Z"
+                      stroke="#575E6A" stroke-width="1.5" />
+                    <path
+                      d="M2.71332 6.3675C4.19082 -0.127498 13.8133 -0.119998 15.2833 6.375C16.1458 10.185 13.7758 13.41 11.6983 15.405C10.1908 16.86 7.80582 16.86 6.29082 15.405C4.22082 13.41 1.85082 10.1775 2.71332 6.3675Z"
+                      stroke="#575E6A" stroke-width="1.5" />
+                  </svg></span>
+                <b class="font-bold text-sm leading-5">Uzbekistan</b>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-8 h-8 bg-[#FAFAFC] rounded-[8px] flex items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17 14.064C17 14.352 16.9359 14.648 16.7997 14.936C16.6635 15.224 16.4872 15.496 16.2549 15.752C15.8623 16.184 15.4296 16.496 14.9409 16.696C14.4602 16.896 13.9394 17 13.3786 17C12.5613 17 11.688 16.808 10.7666 16.416C9.84527 16.024 8.92389 15.496 8.01052 14.832C7.08913 14.16 6.21582 13.416 5.38257 12.592C4.55734 11.76 3.81222 10.888 3.14722 9.976C2.49024 9.064 1.96144 8.152 1.57687 7.248C1.19229 6.336 1 5.464 1 4.632C1 4.088 1.09614 3.568 1.28843 3.088C1.48072 2.6 1.78518 2.152 2.20981 1.752C2.72258 1.248 3.28343 1 3.87631 1C4.10065 1 4.32499 1.048 4.52529 1.144C4.7336 1.24 4.91788 1.384 5.06209 1.592L6.92088 4.208C7.0651 4.408 7.16925 4.592 7.24136 4.768C7.31347 4.936 7.35353 5.104 7.35353 5.256C7.35353 5.448 7.29745 5.64 7.18528 5.824C7.08112 6.008 6.92889 6.2 6.7366 6.392L6.12769 7.024C6.03956 7.112 5.9995 7.216 5.9995 7.344C5.9995 7.408 6.00751 7.464 6.02354 7.528C6.04757 7.592 6.07161 7.64 6.08763 7.688C6.23185 7.952 6.48022 8.296 6.83275 8.712C7.19329 9.128 7.57787 9.552 7.99449 9.976C8.42714 10.4 8.84377 10.792 9.2684 11.152C9.68503 11.504 10.0295 11.744 10.302 11.888C10.342 11.904 10.3901 11.928 10.4462 11.952C10.5103 11.976 10.5744 11.984 10.6465 11.984C10.7827 11.984 10.8868 11.936 10.975 11.848L11.5839 11.248C11.7842 11.048 11.9765 10.896 12.1607 10.8C12.345 10.688 12.5293 10.632 12.7296 10.632C12.8818 10.632 13.0421 10.664 13.2183 10.736C13.3946 10.808 13.5789 10.912 13.7792 11.048L16.4311 12.928C16.6395 13.072 16.7837 13.24 16.8718 13.44C16.9519 13.64 17 13.84 17 14.064Z"
+                      stroke="#575E6A" stroke-width="1.5" stroke-miterlimit="10" />
+                  </svg>
+                </span>
+                <b class="font-bold text-sm leading-5">Phone confirmed</b>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-8 h-8 bg-[#FAFAFC] rounded-[8px] flex items-center justify-center">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.8111 6.43503V11.565C15.8111 12.405 15.3611 13.185 14.6336 13.6125L10.1786 16.185C9.45109 16.605 8.55109 16.605 7.81609 16.185L3.36109 13.6125C2.63359 13.1925 2.18359 12.4125 2.18359 11.565V6.43503C2.18359 5.59503 2.63359 4.81499 3.36109 4.38749L7.81609 1.815C8.54359 1.395 9.44359 1.395 10.1786 1.815L14.6336 4.38749C15.3611 4.81499 15.8111 5.58753 15.8111 6.43503Z"
+                      stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M9.00141 8.24889C9.96652 8.24889 10.7489 7.46649 10.7489 6.50137C10.7489 5.53626 9.96652 4.75391 9.00141 4.75391C8.03629 4.75391 7.25391 5.53626 7.25391 6.50137C7.25391 7.46649 8.03629 8.24889 9.00141 8.24889Z"
+                      stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 12.4957C12 11.1457 10.6575 10.0508 9 10.0508C7.3425 10.0508 6 11.1457 6 12.4957"
+                      stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></span>
+                <b class="font-bold text-sm leading-5"><span class="text-[#9CA5B3] block">Member since</span>
+                  February 2, 2016</b>
+              </li>
+            </ul>
+            <div class="grid grid-cols-2 bg-[#FAFAFC] p-1 rounded-full">
+              <button
+                class="flex items-center bg-[#FAFAFC] justify-center py-3 border border-[#FAFAFC] rounded-full gap-[5px] font-bold text-sm leading-[19px]">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.33338 15.1667H10.6667C13.3467 15.1667 13.8267 14.0933 13.9667 12.7867L14.4667 7.45333C14.6467 5.82667 14.18 4.5 11.3334 4.5H4.66671C1.82005 4.5 1.35338 5.82667 1.53338 7.45333L2.03338 12.7867C2.17338 14.0933 2.65338 15.1667 5.33338 15.1667Z"
+                    stroke="#9CA5B3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M5.33325 4.49998V3.96665C5.33325 2.78665 5.33325 1.83331 7.46659 1.83331H8.53325C10.6666 1.83331 10.6666 2.78665 10.6666 3.96665V4.49998"
+                    stroke="#9CA5B3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M9.33341 9.16667V9.83333C9.33341 9.84 9.33341 9.84 9.33341 9.84667C9.33341 10.5733 9.32675 11.1667 8.00008 11.1667C6.68008 11.1667 6.66675 10.58 6.66675 9.85333V9.16667C6.66675 8.5 6.66675 8.5 7.33341 8.5H8.66675C9.33341 8.5 9.33341 8.5 9.33341 9.16667Z"
+                    stroke="#9CA5B3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M14.4333 7.83331C12.8933 8.95331 11.1333 9.61998 9.33325 9.84665" stroke="#9CA5B3"
+                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1.74658 8.01331C3.24658 9.03997 4.93992 9.65997 6.66658 9.85331" stroke="#9CA5B3"
+                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>Client
+              </button>
+              <button
+                class="flex items-center bg-[#EDF4FF] justify-center py-3 border border-[#F2F2F2] rounded-full gap-[5px] font-bold text-sm leading-[19px] text-[#4790FF]">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.5399 3.12665C13.5133 5.68665 10.9399 9.16665 8.7866 10.8933L7.47327 11.9466C7.3066 12.0666 7.13993 12.1733 6.95327 12.2466C6.95327 12.1266 6.9466 11.9933 6.9266 11.8666C6.85327 11.3066 6.59993 10.7866 6.15326 10.34C5.69993 9.88665 5.1466 9.61998 4.57993 9.54665C4.4466 9.53998 4.31326 9.52665 4.17993 9.53998C4.25326 9.33331 4.3666 9.13998 4.5066 8.97998L5.5466 7.66665C7.2666 5.51331 10.7599 2.92665 13.3133 1.90665C13.7066 1.75998 14.0866 1.86665 14.3266 2.11331C14.5799 2.35998 14.6999 2.73998 14.5399 3.12665Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M6.95343 12.2467C6.95343 12.98 6.67343 13.68 6.14677 14.2133C5.7401 14.62 5.18677 14.9 4.52677 14.9867L2.88677 15.1667C1.99343 15.2667 1.22677 14.5067 1.33343 13.6L1.51343 11.96C1.67343 10.5 2.89343 9.56666 4.18677 9.53999C4.3201 9.53333 4.4601 9.53999 4.58677 9.54666C5.15343 9.61999 5.70677 9.87999 6.1601 10.34C6.60677 10.7867 6.8601 11.3067 6.93343 11.8667C6.9401 11.9933 6.95343 12.12 6.95343 12.2467Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9.49342 10.1467C9.49342 8.40668 8.08009 6.99335 6.34009 6.99335" stroke="currentColor"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>Seller
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="mb-[22px]">
+            <h2 class="mb-1 flex items-center gap-1 capitalize font-bold text-[32px] leading-[43px]">
+              <span>James Kilroy</span>
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 13.5044C20 18.5044 16.5 21.0044 12.34 22.4544C12.1222 22.5282 11.8855 22.5246 11.67 22.4444C7.5 21.0044 4 18.5044 4 13.5044V6.50436C4 6.23914 4.10536 5.98479 4.29289 5.79725C4.48043 5.60971 4.73478 5.50436 5 5.50436C7 5.50436 9.5 4.30436 11.24 2.78436C11.4519 2.60335 11.7214 2.50391 12 2.50391C12.2786 2.50391 12.5481 2.60335 12.76 2.78436C14.51 4.31436 17 5.50436 19 5.50436C19.2652 5.50436 19.5196 5.60971 19.7071 5.79725C19.8946 5.98479 20 6.23914 20 6.50436V13.5044Z"
+                  stroke="#4790FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 12.4961L11 14.4961L15 10.4961" stroke="#4790FF" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </h2>
+            <p class="font-bold text-xl leading-7 capitalize mb-4">
+              Web Developer, Professional Linkbuilder
+            </p>
+            <p class="flex gap-1 items-center text-[#575E6A] font-bold text-sm leading-5">
+              <span class="w-2.5 h-2.5 bg-[#62F94D] rounded-full"></span>
+              Online
+            </p>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold text-base leading-[21px] mb-2.5">
+              About me
+            </h3>
+            <p class="text-base leading-6 text-[#575E6A] mb-3">
+              During its work, more than 100 projects of varying levels of
+              complexity were completed. What can I offer you
+            </p>
+            <button
+              class="py-[9.5px] px-[13px] bg-[#FAFAFC] flex items-center gap-[5px] rounded-[12px] text-sm font-medium leading-[18px]">
+              Read full description
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.17285 13.4482H17.9315H7.17285Z" fill="#202020" />
+                <path d="M7.17285 13.4482H17.9315" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M12.5518 8.06934V18.828V8.06934Z" fill="#202020" />
+                <path d="M12.5518 8.06934V18.828" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="mb-6">
+            <h3 class="font-bold text-base leading-[21px] mb-4">About me</h3>
+            <div class="flex flex-wrap gap-1.5">
+              <button class="py-2.5 px-3 border border-[#F1F3F9] font-bold text-xs rounded-full text-[#575E6A]">
+                Bitrix24
+              </button>
+              <button class="py-2.5 px-3 border border-[#F1F3F9] font-bold text-xs rounded-full text-[#575E6A]">
+                Development on 1C-Bitrix
+              </button>
+              <button class="py-2.5 px-3 border border-[#F1F3F9] font-bold text-xs rounded-full text-[#575E6A]">
+                Bitrix24
+              </button>
+              <button class="py-2.5 px-3 border border-[#F1F3F9] font-bold text-xs rounded-full text-[#575E6A]">
+                Development on 1C-Bitrix
+              </button>
+              <button class="py-2.5 px-3 border border-[#F1F3F9] font-bold text-xs rounded-full text-[#575E6A]">
+                 Show all skills (20)
+              </button>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 mb-6">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.78001 10.2L5.80001 13.22C7.04001 14.46 9.05334 14.46 10.3 13.22L13.2267 10.2934C14.4667 9.05337 14.4667 7.04003 13.2267 5.79337L10.2 2.78003C9.56668 2.1467 8.69334 1.8067 7.80001 1.85337L4.46668 2.01337C3.13334 2.07337 2.07334 3.13337 2.00668 4.46003L1.84668 7.79337C1.80668 8.69337 2.14668 9.5667 2.78001 10.2Z"
+                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M6.33317 8.00002C7.25365 8.00002 7.99984 7.25383 7.99984 6.33335C7.99984 5.41288 7.25365 4.66669 6.33317 4.66669C5.4127 4.66669 4.6665 5.41288 4.6665 6.33335C4.6665 7.25383 5.4127 8.00002 6.33317 8.00002Z"
+                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+            <b class="text-base leading-5 font-bold">Prices for services</b>
+            <button
+              class="w-[30px] h-[30px] bg-[#FAFAFC] flex items-center justify-center gap-[5px] rounded-[8px] text-sm font-medium leading-[18px]">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.17285 13.4482H17.9315H7.17285Z" fill="#202020" />
+                <path d="M7.17285 13.4482H17.9315" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M12.5518 8.06934V18.828V8.06934Z" fill="#202020" />
+                <path d="M12.5518 8.06934V18.828" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 9.99998C10.4853 9.99998 12.5 8.05988 12.5 5.66665C12.5 3.27341 10.4853 1.33331 8 1.33331C5.51472 1.33331 3.5 3.27341 3.5 5.66665C3.5 8.05988 5.51472 9.99998 8 9.99998Z"
+                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M5.01324 9.01331L5.00659 13.9333C5.00659 14.5333 5.42659 14.8266 5.94659 14.58L7.73326 13.7333C7.87992 13.66 8.12659 13.66 8.27325 13.7333L10.0666 14.58C10.5799 14.82 11.0066 14.5333 11.0066 13.9333V8.89331"
+                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <b class="text-base leading-5 font-bold">Certificates</b>
+            <button
+              class="w-[30px] h-[30px] bg-[#FAFAFC] flex items-center justify-center gap-[5px] rounded-[8px] text-sm font-medium leading-[18px]">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.17285 13.4482H17.9315H7.17285Z" fill="#202020" />
+                <path d="M7.17285 13.4482H17.9315" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M12.5518 8.06934V18.828V8.06934Z" fill="#202020" />
+                <path d="M12.5518 8.06934V18.828" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-[365px] w-full bg-white rounded-3xl py-4 px-5">
+        <div class="grid grid-cols-2 gap-0.5 mb-5">
+          <button
+            class="w-full py-[14px] bg-[#202020] rounded-xl text-white flex items-center gap-[5px] justify-center border">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 11.25C10.2426 11.25 11.25 10.2426 11.25 9C11.25 7.75736 10.2426 6.75 9 6.75C7.75736 6.75 6.75 7.75736 6.75 9C6.75 10.2426 7.75736 11.25 9 11.25Z"
+                stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M1.5 9.65995V8.33995C1.5 7.55995 2.1375 6.91495 2.925 6.91495C4.2825 6.91495 4.8375 5.95495 4.155 4.77745C3.765 4.10245 3.9975 3.22495 4.68 2.83495L5.9775 2.09245C6.57 1.73995 7.335 1.94995 7.6875 2.54245L7.77 2.68495C8.445 3.86245 9.555 3.86245 10.2375 2.68495L10.32 2.54245C10.6725 1.94995 11.4375 1.73995 12.03 2.09245L13.3275 2.83495C14.01 3.22495 14.2425 4.10245 13.8525 4.77745C13.17 5.95495 13.725 6.91495 15.0825 6.91495C15.8625 6.91495 16.5075 7.55245 16.5075 8.33995V9.65995C16.5075 10.44 15.87 11.085 15.0825 11.085C13.725 11.085 13.17 12.045 13.8525 13.2225C14.2425 13.905 14.01 14.775 13.3275 15.165L12.03 15.9075C11.4375 16.26 10.6725 16.05 10.32 15.4575L10.2375 15.315C9.5625 14.1375 8.4525 14.1375 7.77 15.315L7.6875 15.4575C7.335 16.05 6.57 16.26 5.9775 15.9075L4.68 15.165C3.9975 14.775 3.765 13.8975 4.155 13.2225C4.8375 12.045 4.2825 11.085 2.925 11.085C2.1375 11.085 1.5 10.44 1.5 9.65995Z"
+                stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="font-medium text-base leading-[21px]">Settings</span>
+          </button>
+          <button
+            class="w-full py-[14px] bg-[#fff] rounded-xl text-[#202020] flex items-center gap-[5px] justify-center border border-[#AEB5BF]">
+            Settings
+          </button>
+        </div>
+        <div class="flex justify-center items-center gap-[5px] mb-4">
+          <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.5234 2.52731L23.603 8.73753C24.023 9.60202 25.1429 10.4312 26.0877 10.59L31.6696 11.5251C35.2392 12.1249 36.0791 14.736 33.5069 17.3119L29.1674 21.6872C28.4325 22.4282 28.03 23.8573 28.2575 24.8806L29.4999 30.2969C30.4798 34.584 28.2225 36.2425 24.4604 34.0018L19.2285 30.8791C18.2836 30.3145 16.7263 30.3145 15.7639 30.8791L10.532 34.0018C6.78738 36.2425 4.51263 34.5664 5.49253 30.2969L6.73489 24.8806C6.96236 23.8573 6.55991 22.4282 5.82499 21.6872L1.48547 17.3119C-1.06925 14.736 -0.24684 12.1249 3.32277 11.5251L8.90465 10.59C9.83205 10.4312 10.9519 9.60202 11.3719 8.73753L14.4515 2.52731C16.1313 -0.842437 18.861 -0.842437 20.5234 2.52731Z"
+              fill="#FFD600" />
+          </svg>
+          <b class="font-bold text-5xl">5.0</b>
+          <small class="mt-auto font-bold text-sm">Seller</small>
+        </div>
+        <div class="flex items-center justify-center mb-5">
+          <button class="text-xs font-bold leading-4 text-[#B7C3D6] bg-[#EDF4FF] rounded-[8px] py-1.5 px-[13px] mr-2">
+            PRO ⭐️
+          </button>
+          <p class="mr-1 text-base leading-5 font-bold">
+            Highest rating plus
+          </p>
+          <button class="flex">
+            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 17C13.125 17 16.5 13.625 16.5 9.5C16.5 5.375 13.125 2 9 2C4.875 2 1.5 5.375 1.5 9.5C1.5 13.625 4.875 17 9 17Z"
+                stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M9 6.5V10.25" stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M8.99585 12.5H9.00259" stroke="#B7C3D6" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <ul class="flex flex-col gap-1.5 mb-5">
+          <li class="p-3 rounded-lg bg-[#FAFAFC] flex justify-between">
+            <b class="font-bold text-xl leading-none">20588 </b>
+            <span class="text-[#575E6A] text-sm font-bold leading-[14px]">Orders completed</span>
+          </li>
+          <li class="p-3 rounded-lg bg-[#FAFAFC] flex justify-between">
+            <b class="font-bold text-xl leading-none">16360 </b>
+            <span class="text-[#575E6A] text-sm font-bold leading-[14px]">Feedback received</span>
+          </li>
+          <li class="p-3 rounded-lg bg-[#FAFAFC] flex justify-between">
+            <b class="font-bold text-xl leading-none">100% </b>
+            <span class="text-[#575E6A] text-sm font-bold leading-[14px] flex items-center gap-1">Orders successfully
+              delivered
+              <button class="flex">
+                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9 17C13.125 17 16.5 13.625 16.5 9.5C16.5 5.375 13.125 2 9 2C4.875 2 1.5 5.375 1.5 9.5C1.5 13.625 4.875 17 9 17Z"
+                    stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 6.5V10.25" stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M8.99585 12.5H9.00259" stroke="#B7C3D6" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></button></span>
+          </li>
+          <li class="p-3 rounded-lg bg-[#FAFAFC] flex justify-between">
+            <b class="font-bold text-xl leading-none">100% </b>
+            <span class="text-[#575E6A] text-sm font-bold leading-[14px]">Orders delivered on time</span>
+          </li>
+          <li class="p-3 rounded-lg bg-[#FAFAFC] flex justify-between">
+            <b class="font-bold text-xl leading-none">55% </b>
+            <span class="text-[#575E6A] text-sm font-bold leading-[14px]">Repeat orders</span>
+          </li>
+        </ul>
+        <div class="flex gap-4">
+          <ul class="flex gap-[5.2px]">
+            <li class="bg-[#9CA5B3] w-[38px] h-[38px] rounded-full"></li>
+            <li class="bg-[#9CA5B3] w-[38px] h-[38px] rounded-full"></li>
+            <li class="bg-[#9CA5B3] w-[38px] h-[38px] rounded-full"></li>
+            <li class="bg-[#9CA5B3] w-[38px] h-[38px] rounded-full"></li>
+            <li class="bg-[#9CA5B3] w-[38px] h-[38px] rounded-full"></li>
+          </ul>
+          <a href="#" class="text-[#9CA5B3] font-bold text-sm leading-4">Show all awards (20)</a>
+        </div>
+      </div>
+    </div>
+    <div class="px-3 pb-[15px]">
+      <div class="bg-[#FAFAFC] rounded-[20px] px-5 -mt-[114px] pb-4 mb-2.5">
+        <div class="flex items-center justify-center mb-1 max-w-[112px] mx-auto">
+          <div class="border-[5px] -mt-[53px] border-white w-[112px] rounded-full h-[112px]">
+            <img class="object-cover w-full h-full rounded-full" src="./img/person.jpg" alt="" />
+          </div>
+        </div>
+        <div class="mb-[14px] flex flex-col justify-center items-center">
+          <h2 class="mb-1.5 flex items-center gap-1 capitalize font-bold text-[24px] leading-[32.4px]">
+            <span>James Kilroy</span>
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 13.5044C20 18.5044 16.5 21.0044 12.34 22.4544C12.1222 22.5282 11.8855 22.5246 11.67 22.4444C7.5 21.0044 4 18.5044 4 13.5044V6.50436C4 6.23914 4.10536 5.98479 4.29289 5.79725C4.48043 5.60971 4.73478 5.50436 5 5.50436C7 5.50436 9.5 4.30436 11.24 2.78436C11.4519 2.60335 11.7214 2.50391 12 2.50391C12.2786 2.50391 12.5481 2.60335 12.76 2.78436C14.51 4.31436 17 5.50436 19 5.50436C19.2652 5.50436 19.5196 5.60971 19.7071 5.79725C19.8946 5.98479 20 6.23914 20 6.50436V13.5044Z"
+                stroke="#4790FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M9 12.4961L11 14.4961L15 10.4961" stroke="#4790FF" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </h2>
+          <p class="font-bold text-xl leading-7 capitalize mb-1.5 text-center">
+            Web Developer, Professional Linkbuilder
+          </p>
+          <p class="flex gap-1 items-center text-[#575E6A] font-bold text-sm leading-5">
+            <span class="w-2.5 h-2.5 bg-[#62F94D] rounded-full"></span>
+            Online
+          </p>
+        </div>
+        <div class="bg-white py-3 px-4 rounded-[24px]  mb-2.5">
+          <div class="bg-white py-4 pt-0 px-0">
+            <div class="flex items-center justify-between">
+              <div class="flex justify-center items-center gap-[4px] mb-1">
+                <svg width="28" height="28" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.5234 2.52731L23.603 8.73753C24.023 9.60202 25.1429 10.4312 26.0877 10.59L31.6696 11.5251C35.2392 12.1249 36.0791 14.736 33.5069 17.3119L29.1674 21.6872C28.4325 22.4282 28.03 23.8573 28.2575 24.8806L29.4999 30.2969C30.4798 34.584 28.2225 36.2425 24.4604 34.0018L19.2285 30.8791C18.2836 30.3145 16.7263 30.3145 15.7639 30.8791L10.532 34.0018C6.78738 36.2425 4.51263 34.5664 5.49253 30.2969L6.73489 24.8806C6.96236 23.8573 6.55991 22.4282 5.82499 21.6872L1.48547 17.3119C-1.06925 14.736 -0.24684 12.1249 3.32277 11.5251L8.90465 10.59C9.83205 10.4312 10.9519 9.60202 11.3719 8.73753L14.4515 2.52731C16.1313 -0.842437 18.861 -0.842437 20.5234 2.52731Z"
+                    fill="#FFD600" />
+                </svg>
+                <b class="font-bold text-4xl">5.0</b>
+                <small class="mt-auto font-bold text-xs">Seller</small>
+              </div>
+              <div class="flex items-center justify-center mt-auto">
+                <button
+                  class="text-[8px] font-bold leading-[10.8px] text-[#9CA5B3] bg-[#EDF4FF] rounded-[6px] py-1.5 pr-1 pl-2 mr-1">
+                  PRO ⭐️
+                </button>
+                <p class="mr-1 text-[12px] leading-[20px] font-bold">
+                  Highest rating plus
+                </p>
+              </div>
+            </div>
+          </div>
+          <ul class="flex flex-col gap-[2px] mb-4">
+            <li class="py-2.5 px-3 rounded-lg bg-[#FAFAFC] flex justify-between">
+              <span class="text-[#575E6A] text-xs font-bold leading-[14px] flex items-center gap-1">
+                Orders successfully delivered
+                <button class="flex">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 17C13.125 17 16.5 13.625 16.5 9.5C16.5 5.375 13.125 2 9 2C4.875 2 1.5 5.375 1.5 9.5C1.5 13.625 4.875 17 9 17Z"
+                      stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9 6.5V10.25" stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M8.99585 12.5H9.00259" stroke="#B7C3D6" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></button></span>
+              <b class="font-bold text-base leading-none">100% </b>
+            </li>
+            <li class="py-2.5 px-3 rounded-lg bg-[#FAFAFC] flex justify-between">
+              <span class="text-[#575E6A] text-xs font-bold leading-[14px] flex items-center gap-1">
+                Orders delivered on time
+              </span>
+              <b class="font-bold text-base leading-none">100% </b>
+            </li>
+            <li class="py-2.5 px-3 rounded-lg bg-[#FAFAFC] flex justify-between">
+              <span class="text-[#575E6A] text-xs font-bold leading-[14px] flex items-center gap-1">
+                Repeat orders
+              </span>
+              <b class="font-bold text-base leading-none">55% </b>
+            </li>
+            <li class="py-2.5 px-3 rounded-lg bg-[#FAFAFC] flex justify-between">
+              <span class="text-[#575E6A] text-xs font-bold leading-[14px] flex items-center gap-1">
+                Orders completed
+              </span>
+              <b class="font-bold text-base leading-none">20588 </b>
+            </li>
+            <li class="py-2.5 px-3 rounded-lg bg-[#FAFAFC] flex justify-between">
+              <span class="text-[#575E6A] text-xs font-bold leading-[14px] flex items-center gap-1">
+                Feedback received
+              </span>
+              <b class="font-bold text-base leading-none">16360 </b>
+            </li>
+          </ul>
+          <div class="flex gap-4">
+            <ul class="flex gap-[5.2px]">
+              <li class="bg-[#9CA5B3] w-[38px] h-[38px] rounded-full"></li>
+              <li class="bg-[#9CA5B3] w-[38px] h-[38px] rounded-full"></li>
+              <li class="bg-[#9CA5B3] w-[38px] h-[38px] rounded-full"></li>
+              <li class="bg-[#9CA5B3] w-[38px] h-[38px] rounded-full"></li>
+              <li class="bg-[#9CA5B3] w-[38px] h-[38px] rounded-full"></li>
+            </ul>
+            <a href="#" class="text-[#9CA5B3] font-bold text-sm leading-4 my-auto">Show all awards (20)</a>
+          </div>
+
+        </div>
+        <div class="px-3 pt-5 pb-2.5 bg-white rounded-3xl border border-[#F1F3F9]">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-center font-bold text-base leading-[21.6px]">
+              @James_K
+            </h3>
+            <button class="border border-[#F2F2F2] w-[30px] h-[30px] rounded-full flex items-center justify-center">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.47583 5.52418L5.52417 8.47585C5.145 8.09668 4.91167 7.57752 4.91167 7.00002C4.91167 5.84502 5.845 4.91168 7 4.91168C7.5775 4.91168 8.09667 5.14502 8.47583 5.52418Z"
+                  stroke="#9CA5B3" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M10.395 3.36584C9.37417 2.59584 8.2075 2.17584 7 2.17584C4.94083 2.17584 3.02167 3.38918 1.68583 5.48918C1.16083 6.31168 1.16083 7.69418 1.68583 8.51668C2.14667 9.24001 2.68333 9.86418 3.26667 10.3658"
+                  stroke="#9CA5B3" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M4.91167 11.3925C5.57667 11.6725 6.2825 11.8242 7 11.8242C9.05917 11.8242 10.9783 10.6109 12.3142 8.51085C12.8392 7.68835 12.8392 6.30585 12.3142 5.48335C12.1217 5.18002 11.9117 4.89419 11.6958 4.62585"
+                  stroke="#9CA5B3" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9.0475 7.40833C8.89583 8.23083 8.225 8.90166 7.4025 9.05333" stroke="#9CA5B3"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.52416 8.47583L1.16666 12.8333" stroke="#9CA5B3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M12.8333 1.16669L8.47583 5.52419" stroke="#9CA5B3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <ul class="grid grid-cols-2 gap-2 mb-2">
+            <li class="flex items-center gap-1.5">
+              <span class="w-8 h-8 bg-[#FAFAFC] rounded-[8px] flex items-center justify-center">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.86762 1.67254L4.12512 3.08254C3.26262 3.40504 2.55762 4.42504 2.55762 5.34004V10.9125C2.55762 11.7975 3.14262 12.96 3.85512 13.4925L7.08012 15.9C8.13762 16.695 9.87762 16.695 10.9351 15.9L14.1601 13.4925C14.8726 12.96 15.4576 11.7975 15.4576 10.9125V5.34004C15.4576 4.41754 14.7526 3.39754 13.8901 3.07504L10.1476 1.67254C9.51012 1.44004 8.49012 1.44004 7.86762 1.67254Z"
+                    stroke="#4790FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M6.7876 8.90251L7.9951 10.11L11.2201 6.88501" stroke="#4790FF" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg></span>
+              <b class="font-bold text-xs leading-5">Identity confirmed</b>
+            </li>
+            <li class="flex items-center gap-1.5">
+              <span class="w-8 h-8 bg-[#FAFAFC] rounded-[8px] flex items-center justify-center">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                    stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M5.99922 2.25H6.74922C5.28672 6.63 5.28672 11.37 6.74922 15.75H5.99922" stroke="#575E6A"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M11.25 2.25C12.7125 6.63 12.7125 11.37 11.25 15.75" stroke="#575E6A" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M2.25 12V11.25C6.63 12.7125 11.37 12.7125 15.75 11.25V12" stroke="#575E6A"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M2.25 6.74922C6.63 5.28672 11.37 5.28672 15.75 6.74922" stroke="#575E6A" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <b class="font-bold text-xs leading-5">RUS, UZ, ENG</b>
+            </li>
+            <li class="flex items-center gap-1.5">
+              <span class="w-8 h-8 bg-[#FAFAFC] rounded-[8px] flex items-center justify-center">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.00016 10.0706C10.2925 10.0706 11.3402 9.02297 11.3402 7.73063C11.3402 6.43828 10.2925 5.39062 9.00016 5.39062C7.70781 5.39062 6.66016 6.43828 6.66016 7.73063C6.66016 9.02297 7.70781 10.0706 9.00016 10.0706Z"
+                    stroke="#575E6A" stroke-width="1.5" />
+                  <path
+                    d="M2.71332 6.3675C4.19082 -0.127498 13.8133 -0.119998 15.2833 6.375C16.1458 10.185 13.7758 13.41 11.6983 15.405C10.1908 16.86 7.80582 16.86 6.29082 15.405C4.22082 13.41 1.85082 10.1775 2.71332 6.3675Z"
+                    stroke="#575E6A" stroke-width="1.5" />
+                </svg></span>
+              <b class="font-bold text-xs leading-5">Uzbekistan</b>
+            </li>
+            <li class="flex items-center gap-1.5">
+              <span class="w-8 h-8 bg-[#FAFAFC] rounded-[8px] flex items-center justify-center">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17 14.064C17 14.352 16.9359 14.648 16.7997 14.936C16.6635 15.224 16.4872 15.496 16.2549 15.752C15.8623 16.184 15.4296 16.496 14.9409 16.696C14.4602 16.896 13.9394 17 13.3786 17C12.5613 17 11.688 16.808 10.7666 16.416C9.84527 16.024 8.92389 15.496 8.01052 14.832C7.08913 14.16 6.21582 13.416 5.38257 12.592C4.55734 11.76 3.81222 10.888 3.14722 9.976C2.49024 9.064 1.96144 8.152 1.57687 7.248C1.19229 6.336 1 5.464 1 4.632C1 4.088 1.09614 3.568 1.28843 3.088C1.48072 2.6 1.78518 2.152 2.20981 1.752C2.72258 1.248 3.28343 1 3.87631 1C4.10065 1 4.32499 1.048 4.52529 1.144C4.7336 1.24 4.91788 1.384 5.06209 1.592L6.92088 4.208C7.0651 4.408 7.16925 4.592 7.24136 4.768C7.31347 4.936 7.35353 5.104 7.35353 5.256C7.35353 5.448 7.29745 5.64 7.18528 5.824C7.08112 6.008 6.92889 6.2 6.7366 6.392L6.12769 7.024C6.03956 7.112 5.9995 7.216 5.9995 7.344C5.9995 7.408 6.00751 7.464 6.02354 7.528C6.04757 7.592 6.07161 7.64 6.08763 7.688C6.23185 7.952 6.48022 8.296 6.83275 8.712C7.19329 9.128 7.57787 9.552 7.99449 9.976C8.42714 10.4 8.84377 10.792 9.2684 11.152C9.68503 11.504 10.0295 11.744 10.302 11.888C10.342 11.904 10.3901 11.928 10.4462 11.952C10.5103 11.976 10.5744 11.984 10.6465 11.984C10.7827 11.984 10.8868 11.936 10.975 11.848L11.5839 11.248C11.7842 11.048 11.9765 10.896 12.1607 10.8C12.345 10.688 12.5293 10.632 12.7296 10.632C12.8818 10.632 13.0421 10.664 13.2183 10.736C13.3946 10.808 13.5789 10.912 13.7792 11.048L16.4311 12.928C16.6395 13.072 16.7837 13.24 16.8718 13.44C16.9519 13.64 17 13.84 17 14.064Z"
+                    stroke="#575E6A" stroke-width="1.5" stroke-miterlimit="10" />
+                </svg>
+              </span>
+              <b class="font-bold text-xs leading-5">Phone confirmed</b>
+            </li>
+            <li class="flex col-span-2 items-center gap-1.5">
+              <span class="w-8 h-8 bg-[#FAFAFC] rounded-[8px] flex items-center justify-center">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.8111 6.43503V11.565C15.8111 12.405 15.3611 13.185 14.6336 13.6125L10.1786 16.185C9.45109 16.605 8.55109 16.605 7.81609 16.185L3.36109 13.6125C2.63359 13.1925 2.18359 12.4125 2.18359 11.565V6.43503C2.18359 5.59503 2.63359 4.81499 3.36109 4.38749L7.81609 1.815C8.54359 1.395 9.44359 1.395 10.1786 1.815L14.6336 4.38749C15.3611 4.81499 15.8111 5.58753 15.8111 6.43503Z"
+                    stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M9.00141 8.24889C9.96652 8.24889 10.7489 7.46649 10.7489 6.50137C10.7489 5.53626 9.96652 4.75391 9.00141 4.75391C8.03629 4.75391 7.25391 5.53626 7.25391 6.50137C7.25391 7.46649 8.03629 8.24889 9.00141 8.24889Z"
+                    stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12 12.4957C12 11.1457 10.6575 10.0508 9 10.0508C7.3425 10.0508 6 11.1457 6 12.4957"
+                    stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></span>
+              <b class="font-bold text-xs leading-5">
+                <span class="text-[#9CA5B3]">Member since</span>
+                February 2, 2016</b>
+            </li>
+          </ul>
+          <div class="grid grid-cols-2 bg-[#FAFAFC] p-1 rounded-full">
+            <button
+              class="flex items-center bg-[#FAFAFC] justify-center py-2.5 border border-[#FAFAFC] rounded-full gap-[5px] font-bold text-sm leading-[19px]">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.33338 15.1667H10.6667C13.3467 15.1667 13.8267 14.0933 13.9667 12.7867L14.4667 7.45333C14.6467 5.82667 14.18 4.5 11.3334 4.5H4.66671C1.82005 4.5 1.35338 5.82667 1.53338 7.45333L2.03338 12.7867C2.17338 14.0933 2.65338 15.1667 5.33338 15.1667Z"
+                  stroke="#9CA5B3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M5.33325 4.49998V3.96665C5.33325 2.78665 5.33325 1.83331 7.46659 1.83331H8.53325C10.6666 1.83331 10.6666 2.78665 10.6666 3.96665V4.49998"
+                  stroke="#9CA5B3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M9.33341 9.16667V9.83333C9.33341 9.84 9.33341 9.84 9.33341 9.84667C9.33341 10.5733 9.32675 11.1667 8.00008 11.1667C6.68008 11.1667 6.66675 10.58 6.66675 9.85333V9.16667C6.66675 8.5 6.66675 8.5 7.33341 8.5H8.66675C9.33341 8.5 9.33341 8.5 9.33341 9.16667Z"
+                  stroke="#9CA5B3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M14.4333 7.83331C12.8933 8.95331 11.1333 9.61998 9.33325 9.84665" stroke="#9CA5B3"
+                  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1.74658 8.01331C3.24658 9.03997 4.93992 9.65997 6.66658 9.85331" stroke="#9CA5B3"
+                  stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Client
+            </button>
+            <button
+              class="flex items-center bg-[#EDF4FF] justify-center py-2.5 border border-[#F2F2F2] rounded-full gap-[5px] font-bold text-sm leading-[19px] text-[#4790FF]">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.5399 3.12665C13.5133 5.68665 10.9399 9.16665 8.7866 10.8933L7.47327 11.9466C7.3066 12.0666 7.13993 12.1733 6.95327 12.2466C6.95327 12.1266 6.9466 11.9933 6.9266 11.8666C6.85327 11.3066 6.59993 10.7866 6.15326 10.34C5.69993 9.88665 5.1466 9.61998 4.57993 9.54665C4.4466 9.53998 4.31326 9.52665 4.17993 9.53998C4.25326 9.33331 4.3666 9.13998 4.5066 8.97998L5.5466 7.66665C7.2666 5.51331 10.7599 2.92665 13.3133 1.90665C13.7066 1.75998 14.0866 1.86665 14.3266 2.11331C14.5799 2.35998 14.6999 2.73998 14.5399 3.12665Z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M6.95343 12.2467C6.95343 12.98 6.67343 13.68 6.14677 14.2133C5.7401 14.62 5.18677 14.9 4.52677 14.9867L2.88677 15.1667C1.99343 15.2667 1.22677 14.5067 1.33343 13.6L1.51343 11.96C1.67343 10.5 2.89343 9.56666 4.18677 9.53999C4.3201 9.53333 4.4601 9.53999 4.58677 9.54666C5.15343 9.61999 5.70677 9.87999 6.1601 10.34C6.60677 10.7867 6.8601 11.3067 6.93343 11.8667C6.9401 11.9933 6.95343 12.12 6.95343 12.2467Z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9.49342 10.1467C9.49342 8.40668 8.08009 6.99335 6.34009 6.99335" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>Seller
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-[15px] rounded-[14px] ">
+        <div class=" bg-[#FAFAFC] rounded-[16px] p-[15px] mb-[15px]">
+          <h3 class="font-bold text-base leading-5 mb-2" >About me</h3>
+          <p class="text-sm text-[18.9px] text-[#575E6A] leading-[18.9px] mb-5">During its work, more than 100 projects of varying levels of complexity were completed. <br>
+            What can I offer you: <br>
+            -Layout of websites of any level of complexity</p>
+            <button
+            class="py-[9.5px] px-[13px] bg-[#fff] flex items-center gap-[5px] rounded-[12px] text-sm font-medium leading-[18px] mb-5">
+            Read full description
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.17285 13.4482H17.9315H7.17285Z" fill="#202020" />
+              <path d="M7.17285 13.4482H17.9315" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M12.5518 8.06934V18.828V8.06934Z" fill="#202020" />
+              <path d="M12.5518 8.06934V18.828" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <div class="">
+            <h3 class="font-bold text-base leading-[21px] mb-4">Skills</h3>
+            <div class="flex flex-wrap gap-1.5">
+              <button class="py-2.5 px-3 border border-[#F1F3F9] font-bold text-xs rounded-full text-[#575E6A]">
+                Bitrix24
+              </button>
+              <button class="py-2.5 px-3 border border-[#F1F3F9] font-bold text-xs rounded-full text-[#575E6A]">
+                Development on 1C-Bitrix
+              </button>
+              <button class="py-2.5 px-3 border border-[#F1F3F9] font-bold text-xs rounded-full text-[#575E6A]">
+                Bitrix24
+              </button>
+              <button class="py-2.5 px-3 border border-[#F1F3F9] font-bold text-xs rounded-full text-[#575E6A]">
+                Development on 1C-Bitrix
+              </button>
+              <button class="py-2.5 px-3 border border-[#F1F3F9] font-bold text-xs rounded-full text-[#575E6A]">
+                 Show all skills (20)
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <div class="flex items-center gap-2 mb-[15px]">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.78001 10.2L5.80001 13.22C7.04001 14.46 9.05334 14.46 10.3 13.22L13.2267 10.2934C14.4667 9.05337 14.4667 7.04003 13.2267 5.79337L10.2 2.78003C9.56668 2.1467 8.69334 1.8067 7.80001 1.85337L4.46668 2.01337C3.13334 2.07337 2.07334 3.13337 2.00668 4.46003L1.84668 7.79337C1.80668 8.69337 2.14668 9.5667 2.78001 10.2Z"
+              stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M6.33317 8.00002C7.25365 8.00002 7.99984 7.25383 7.99984 6.33335C7.99984 5.41288 7.25365 4.66669 6.33317 4.66669C5.4127 4.66669 4.6665 5.41288 4.6665 6.33335C4.6665 7.25383 5.4127 8.00002 6.33317 8.00002Z"
+              stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+          <b class="text-base leading-5 font-bold">Prices for services</b>
+          <button
+            class="w-[30px] h-[30px] bg-[#FAFAFC] flex items-center justify-center gap-[5px] rounded-[8px] text-sm font-medium leading-[18px] ml-auto">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.17285 13.4482H17.9315H7.17285Z" fill="#202020" />
+              <path d="M7.17285 13.4482H17.9315" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M12.5518 8.06934V18.828V8.06934Z" fill="#202020" />
+              <path d="M12.5518 8.06934V18.828" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center gap-2 ">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8 9.99998C10.4853 9.99998 12.5 8.05988 12.5 5.66665C12.5 3.27341 10.4853 1.33331 8 1.33331C5.51472 1.33331 3.5 3.27341 3.5 5.66665C3.5 8.05988 5.51472 9.99998 8 9.99998Z"
+              stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M5.01324 9.01331L5.00659 13.9333C5.00659 14.5333 5.42659 14.8266 5.94659 14.58L7.73326 13.7333C7.87992 13.66 8.12659 13.66 8.27325 13.7333L10.0666 14.58C10.5799 14.82 11.0066 14.5333 11.0066 13.9333V8.89331"
+              stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <b class="text-base leading-5 font-bold">Certificates</b>
+          <button
+            class="w-[30px] h-[30px] bg-[#FAFAFC] flex items-center justify-center gap-[5px] rounded-[8px] text-sm font-medium leading-[18px] ml-auto">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.17285 13.4482H17.9315H7.17285Z" fill="#202020" />
+              <path d="M7.17285 13.4482H17.9315" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M12.5518 8.06934V18.828V8.06934Z" fill="#202020" />
+              <path d="M12.5518 8.06934V18.828" stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
