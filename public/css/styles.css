@@ -598,6 +598,9 @@ video {
 .h-\[260px\] {
   height: 260px;
 }
+.h-0 {
+  height: 0px;
+}
 .max-h-0 {
   max-height: 0px;
 }
@@ -902,9 +905,6 @@ video {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.pb-16 {
-  padding-bottom: 4rem;
-}
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -922,6 +922,9 @@ video {
 }
 .pb-9 {
   padding-bottom: 2.25rem;
+}
+.pb-\[60px\] {
+  padding-bottom: 60px;
 }
 .pl-11 {
   padding-left: 2.75rem;
@@ -952,15 +955,6 @@ video {
 }
 .pt-\[128px\] {
   padding-top: 128px;
-}
-.pb-\[\] {
-  padding-bottom: ;
-}
-.pb-\[70px\] {
-  padding-bottom: 70px;
-}
-.pb-\[60px\] {
-  padding-bottom: 60px;
 }
 .text-center {
   text-align: center;
@@ -1094,6 +1088,9 @@ video {
 }
 .gradient_btn{
     background: linear-gradient(90deg, #6AB8FF 0%, #DEF5FF 136.52%);
+}
+.transition-height {
+    transition: height 0.3s ease;
 }
 .placeholder\:text-sm::-moz-placeholder {
   font-size: 0.875rem;

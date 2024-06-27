@@ -35,3 +35,6 @@
 .gradient_btn{
     background: linear-gradient(90deg, #6AB8FF 0%, #DEF5FF 136.52%);
 }
+.transition-height {
+    transition: height 0.3s ease;
+}
