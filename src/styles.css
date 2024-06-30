@@ -61,3 +61,10 @@ body {
 .search-icon.clicked {
     transform: rotate(90deg);
 }
+
+.like-button svg path {
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+.service_shadow{
+    box-shadow: 0px 3.17px 31.73px 0px #0000000D;
+}
