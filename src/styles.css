@@ -32,14 +32,14 @@ body {
 }
 
 .header_active {
-    color: #202020;
-    border-bottom: 2px solid var(--accent-blue, #4790FF)
+    color: #202020 !important;
+    border-bottom: 2px solid var(--accent-blue, #4790FF) !important;
 }
 
 .btn_active {
-    color: #4790FF;
-    border: 1px solid var(--stroke-light, #F2F2F2);
-    background-color: var(--fill-light-blue, #EDF4FF);
+    color: #4790FF !important;
+    border: 1px solid var(--stroke-light, #F2F2F2) !important;
+    background-color: var(--fill-light-blue, #EDF4FF) !important;
 }
 
 .gradient_btn {
@@ -70,4 +70,7 @@ body {
 }
 .service_mobile{
     box-shadow: 0px 4px 40px 0px #0000000D;
+}
+.verification_shadow{
+    background: linear-gradient(43.66deg, #FBFCFF 24.62%, #F2F5FD 69.53%, rgba(255, 255, 255, 0.69) 95.65%) ;
 }
