@@ -388,13 +388,13 @@
                 <div class="bg-[#FAFAFC] rounded-xl max-w-[220px] w-full md:hidden flex py-4 pl-5 max-sm:pl-2 relative">
 
                     <div class="flex gap-3 max-sm:gap-0.5  max-w-[117px]">
-                        <label for="myCheckbox" class="flex items-center cursor-pointer">
-                            <input id="check" type="checkbox" class="hide_services_on_weekends">
-                            <span class="ml-2"></span>
-                        </label>
-                        <label for="check" class="font-bold text-[12px] leading-[14.4px]">Hide services on weekends</label>
-
-
+                        <div class="flex items-center cursor-pointer gap-[10px]">
+                            <input type="checkbox" id="hide_services_on_weekends_1" class="hide_services_on_weekends">
+                            <label for="hide_services_on_weekends_1" class="flex">
+                                <span class="font-bold text-[12px] leading-[14.4px] ml-2">Hide services on
+                                    weekends</span>
+                            </label>
+                        </div>
                     </div>
 
                     <svg class="absolute top-2 right-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -417,12 +417,11 @@
                             <input type="checkbox" name="accept_orders">
                             <span class="slider round"></span>
                         </label>
-
                         <span class="text-[12px] font-bold">I accept orders</span>
                     </div>
 
-                    <svg class="absolute top-2 right-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg class="absolute top-2 right-2 cursor-pointer" width="18" height="18" viewBox="0 0 18 18"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
                             stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -468,7 +467,7 @@
                 </div>
 
                 <div class="hidden md:flex items-center gap-3">
-                    <span>Busy</span>
+                    <span class="text-[#9CA5B3]">Busy</span>
 
                     <label class="switch cursor-pointer">
                         <input type="checkbox" name="accept_orders">
@@ -478,7 +477,8 @@
                     <div class="flex items-center gap-1">
                         <span class="font-bold">I accept orders</span>
 
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
                                 stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -522,7 +522,7 @@
                 </div>
 
                 <div class="hidden md:flex items-center gap-3">
-                    <span>Busy</span>
+                    <span class="text-[#9CA5B3]">Busy</span>
 
                     <label class="switch cursor-pointer">
                         <input type="checkbox" name="accept_orders">
@@ -532,7 +532,8 @@
                     <div class="flex items-center gap-1">
                         <span class="font-bold">I accept orders</span>
 
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
                                 stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -548,15 +549,15 @@
 
 
             <div class="hidden md:flex items-center gap-1">
-                <label for="myCheckbox" class="flex items-center">
-                    <input type="checkbox" class="hide_services_on_weekends cursor-pointer">
-                    <span class="ml-2"></span>
-                </label>
-
-
-                <span class="font-bold">Hide services on weekends</span>
-
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="flex items-center">
+                    <input type="checkbox" id="hide_services_on_weekends_For"
+                        class="hide_services_on_weekends cursor-pointer">
+                    <label for="hide_services_on_weekends_For">
+                        <span class="ml-2 font-bold ">Hide services on weekends</span>
+                    </label>
+                </div>
+                <svg class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
                         stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -570,9 +571,9 @@
 
 
         <main class="bg-[#F1F3F9] gap-3 rounded-3xl sm:px-5 sm:pt-5 px-3 pt-3 pb-[43px]" id="active">
-            <div class="grid lg:grid-cols-4 gap-y-[15px] gap-x-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 ">
+            <div class="grid lg:grid-cols-4 gap-y-[15px] gap-x-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 ">
                 <!--start for Desktop -->
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -728,164 +729,7 @@
                 </div>
 
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
-                    <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
-                        <div class="flex justify-between">
-                            <button
-                                class="bg-[#4790FF] text-[#fff] rounded-lg px-[22px] py-[6px] hover:opacity-70 active:opacity-60 transition-all">
-                                <span class="leading-[18.9px]">
-                                    Active
-                                </span>
-                            </button>
-
-                            <button
-                                class="bg-[#fff] rounded-[100px] p-3 hover:opacity-70 active:opacity-60 transition-all">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.1 12.74V3.26C7.1 2.36 6.72 2 5.76 2H3.34C2.38 2 2 2.36 2 3.26V12.74C2 13.64 2.38 14 3.34 14H5.76C6.72 14 7.1 13.64 7.1 12.74Z"
-                                        stroke="#202020" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M13.9999 12.74V3.26C13.9999 2.36 13.6199 2 12.6599 2H10.2399C9.28657 2 8.8999 2.36 8.8999 3.26V12.74C8.8999 13.64 9.2799 14 10.2399 14H12.6599C13.6199 14 13.9999 13.64 13.9999 12.74Z"
-                                        stroke="#202020" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-
-                    <h2 class="font-bold lg:text-xl md:text-lg leading-[24px] mb-[10px]">Development of visualization of
-                        the exterior
-                        of
-                        buildings</h2>
-                    <p class="text-[#9CA5B3] text-sm font-medium leading-[16.8px] mb-[18px]">Design Interior > Design of
-                        buildings >
-                        Landscape design</p>
-
-                    <div class="flex flex-col gap-y-1 mb-3">
-
-                        <div class="bg-[#FAFAFC] rounded-lg flex justify-between py-1 pl-2 pr-3">
-
-                            <div class="flex items-center    gap-[2px]">
-                                <div class="bg-[#EDF4FF] rounded-[20px] p-[7px]">
-                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.02 7.27499C8.81 7.47999 8.69 7.775 8.72 8.09C8.765 8.63 9.26 9.02499 9.8 9.02499H10.75V9.62C10.75 10.655 9.905 11.5 8.87 11.5H3.13C2.095 11.5 1.25 10.655 1.25 9.62V6.255C1.25 5.22 2.095 4.375 3.13 4.375H8.87C9.905 4.375 10.75 5.22 10.75 6.255V6.97501H9.74C9.46 6.97501 9.205 7.08499 9.02 7.27499Z"
-                                            stroke="#4790FF" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M1.25 6.70564V4.42066C1.25 3.82566 1.615 3.29564 2.17 3.08564L6.14 1.58564C6.76 1.35064 7.425 1.81066 7.425 2.47566V4.37565"
-                                            stroke="#4790FF" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M11.2794 7.48654V8.51657C11.2794 8.79157 11.0594 9.01655 10.7794 9.02655H9.79941C9.25941 9.02655 8.76441 8.63155 8.71941 8.09155C8.68941 7.77655 8.80941 7.48155 9.01941 7.27655C9.20441 7.08655 9.45941 6.97656 9.73941 6.97656H10.7794C11.0594 6.98656 11.2794 7.21154 11.2794 7.48654Z"
-                                            stroke="#4790FF" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M3.5 6.5H7" stroke="#4790FF" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                                <span class="text-[#9CA5B3] text-[14px] font-bold">Income</span>
-                            </div>
-
-                            <span class="text-[#4790FF] font-bold">100 000 UZS</span>
-                        </div>
-
-                        <div class="bg-[#FAFAFC] rounded-lg flex justify-between py-1 px-3">
-
-                            <div class="flex items-center gap-2">
-                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10.3866 8.49995C10.3866 9.81995 9.31995 10.8866 7.99995 10.8866C6.67995 10.8866 5.61328 9.81995 5.61328 8.49995C5.61328 7.17995 6.67995 6.11328 7.99995 6.11328C9.31995 6.11328 10.3866 7.17995 10.3866 8.49995Z"
-                                        stroke="#9CA5B3" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M7.9999 14.0138C10.3532 14.0138 12.5466 12.6271 14.0732 10.2271C14.6732 9.28713 14.6732 7.70713 14.0732 6.76713C12.5466 4.36713 10.3532 2.98047 7.9999 2.98047C5.64656 2.98047 3.45323 4.36713 1.92656 6.76713C1.32656 7.70713 1.32656 9.28713 1.92656 10.2271C3.45323 12.6271 5.64656 14.0138 7.9999 14.0138Z"
-                                        stroke="#9CA5B3" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <span class="text-[#9CA5B3] text-[14px] font-bold">Views</span>
-                            </div>
-
-                            <span class="font-bold">16</span>
-                        </div>
-
-                        <div class="bg-[#FAFAFC] rounded-lg flex justify-between py-1 px-3">
-
-                            <div class="flex items-center  gap-2">
-                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M12.3332 8.93359V11.4003C12.3332 13.4803 10.3932 15.1669 7.99984 15.1669C5.6065 15.1669 3.6665 13.4803 3.6665 11.4003V8.93359C3.6665 11.0136 5.6065 12.5003 7.99984 12.5003C10.3932 12.5003 12.3332 11.0136 12.3332 8.93359Z"
-                                        stroke="#9CA5B3" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M12.3332 5.5987C12.3332 6.20537 12.1665 6.76536 11.8732 7.24536C11.1598 8.4187 9.69317 9.16536 7.99984 9.16536C6.3065 9.16536 4.83984 8.4187 4.12651 7.24536C3.83317 6.76536 3.6665 6.20537 3.6665 5.5987C3.6665 4.5587 4.15317 3.6187 4.93317 2.9387C5.71983 2.25203 6.79984 1.83203 7.99984 1.83203C9.19984 1.83203 10.2798 2.25203 11.0665 2.93203C11.8465 3.6187 12.3332 4.5587 12.3332 5.5987Z"
-                                        stroke="#9CA5B3" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M12.3332 5.5987V8.93203C12.3332 11.012 10.3932 12.4987 7.99984 12.4987C5.6065 12.4987 3.6665 11.012 3.6665 8.93203V5.5987C3.6665 3.5187 5.6065 1.83203 7.99984 1.83203C9.19984 1.83203 10.2798 2.25203 11.0665 2.93203C11.8465 3.6187 12.3332 4.5587 12.3332 5.5987Z"
-                                        stroke="#9CA5B3" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-
-                                <span class="text-[#9CA5B3] text-[14px] font-bold">Sales</span>
-                            </div>
-
-                            <span class="font-bold">2</span>
-                        </div>
-                    </div>
-
-
-                    <div class="flex gap-[22px]">
-                        <button
-                            class="w-full border-[#F2F2F2] border-[1px] flex justify-center items-center gap-[5px] rounded-xl py-[14px] hover:opacity-70 active:opacity-60 transition-all">
-                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.33203 1.83203H5.9987C2.66536 1.83203 1.33203 3.16536 1.33203 6.4987V10.4987C1.33203 13.832 2.66536 15.1654 5.9987 15.1654H9.9987C13.332 15.1654 14.6654 13.832 14.6654 10.4987V9.16536"
-                                    stroke="#575E6A" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M10.6933 2.51155L5.43992 7.76488C5.23992 7.96488 5.03992 8.35822 4.99992 8.64488L4.71325 10.6515C4.60659 11.3782 5.11992 11.8849 5.84659 11.7849L7.85325 11.4982C8.13325 11.4582 8.52659 11.2582 8.73325 11.0582L13.9866 5.80488C14.8933 4.89822 15.3199 3.84488 13.9866 2.51155C12.6533 1.17822 11.5999 1.60488 10.6933 2.51155Z"
-                                    stroke="#575E6A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M9.94141 3.26562C10.3881 4.85896 11.6347 6.10562 13.2347 6.55896"
-                                    stroke="#575E6A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <span>Edit</span>
-                        </button>
-
-                        <button
-                            class="w-full border-[#F2F2F2] border-[1px] flex justify-center items-center gap-[5px] rounded-xl py-[14px] hover:opacity-70 active:opacity-60 transition-all">
-                            <span class="text-[#9CA5B3]">Delete</span>
-                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M14 4.48568C11.78 4.26568 9.54667 4.15234 7.32 4.15234C6 4.15234 4.68 4.21901 3.36 4.35234L2 4.48568"
-                                    stroke="#FF8E8E" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M5.6665 3.81203L5.81317 2.9387C5.91984 2.30536 5.99984 1.83203 7.1265 1.83203H8.87317C9.99984 1.83203 10.0865 2.33203 10.1865 2.94536L10.3332 3.81203"
-                                    stroke="#FF8E8E" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M12.5674 6.59375L12.1341 13.3071C12.0607 14.3537 12.0007 15.1671 10.1407 15.1671H5.86075C4.00075 15.1671 3.94075 14.3537 3.86742 13.3071L3.43408 6.59375"
-                                    stroke="#FF8E8E" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M6.88721 11.5H9.10721" stroke="#FF8E8E" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M6.3335 8.83203H9.66683" stroke="#FF8E8E" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-
-
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -1042,7 +886,164 @@
 
 
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
+                    <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
+                        <div class="flex justify-between">
+                            <button
+                                class="bg-[#4790FF] text-[#fff] rounded-lg px-[22px] py-[6px] hover:opacity-70 active:opacity-60 transition-all">
+                                <span class="leading-[18.9px]">
+                                    Active
+                                </span>
+                            </button>
+
+                            <button
+                                class="bg-[#fff] rounded-[100px] p-3 hover:opacity-70 active:opacity-60 transition-all">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.1 12.74V3.26C7.1 2.36 6.72 2 5.76 2H3.34C2.38 2 2 2.36 2 3.26V12.74C2 13.64 2.38 14 3.34 14H5.76C6.72 14 7.1 13.64 7.1 12.74Z"
+                                        stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M13.9999 12.74V3.26C13.9999 2.36 13.6199 2 12.6599 2H10.2399C9.28657 2 8.8999 2.36 8.8999 3.26V12.74C8.8999 13.64 9.2799 14 10.2399 14H12.6599C13.6199 14 13.9999 13.64 13.9999 12.74Z"
+                                        stroke="#202020" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <h2 class="font-bold lg:text-xl md:text-lg leading-[24px] mb-[10px]">Development of visualization of
+                        the exterior
+                        of
+                        buildings</h2>
+                    <p class="text-[#9CA5B3] text-sm font-medium leading-[16.8px] mb-[18px]">Design Interior > Design of
+                        buildings >
+                        Landscape design</p>
+
+                    <div class="flex flex-col gap-y-1 mb-3">
+
+                        <div class="bg-[#FAFAFC] rounded-lg flex justify-between py-1 pl-2 pr-3">
+
+                            <div class="flex items-center    gap-[2px]">
+                                <div class="bg-[#EDF4FF] rounded-[20px] p-[7px]">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.02 7.27499C8.81 7.47999 8.69 7.775 8.72 8.09C8.765 8.63 9.26 9.02499 9.8 9.02499H10.75V9.62C10.75 10.655 9.905 11.5 8.87 11.5H3.13C2.095 11.5 1.25 10.655 1.25 9.62V6.255C1.25 5.22 2.095 4.375 3.13 4.375H8.87C9.905 4.375 10.75 5.22 10.75 6.255V6.97501H9.74C9.46 6.97501 9.205 7.08499 9.02 7.27499Z"
+                                            stroke="#4790FF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M1.25 6.70564V4.42066C1.25 3.82566 1.615 3.29564 2.17 3.08564L6.14 1.58564C6.76 1.35064 7.425 1.81066 7.425 2.47566V4.37565"
+                                            stroke="#4790FF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M11.2794 7.48654V8.51657C11.2794 8.79157 11.0594 9.01655 10.7794 9.02655H9.79941C9.25941 9.02655 8.76441 8.63155 8.71941 8.09155C8.68941 7.77655 8.80941 7.48155 9.01941 7.27655C9.20441 7.08655 9.45941 6.97656 9.73941 6.97656H10.7794C11.0594 6.98656 11.2794 7.21154 11.2794 7.48654Z"
+                                            stroke="#4790FF" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3.5 6.5H7" stroke="#4790FF" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span class="text-[#9CA5B3] text-[14px] font-bold">Income</span>
+                            </div>
+
+                            <span class="text-[#4790FF] font-bold">100 000 UZS</span>
+                        </div>
+
+                        <div class="bg-[#FAFAFC] rounded-lg flex justify-between py-1 px-3">
+
+                            <div class="flex items-center gap-2">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.3866 8.49995C10.3866 9.81995 9.31995 10.8866 7.99995 10.8866C6.67995 10.8866 5.61328 9.81995 5.61328 8.49995C5.61328 7.17995 6.67995 6.11328 7.99995 6.11328C9.31995 6.11328 10.3866 7.17995 10.3866 8.49995Z"
+                                        stroke="#9CA5B3" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M7.9999 14.0138C10.3532 14.0138 12.5466 12.6271 14.0732 10.2271C14.6732 9.28713 14.6732 7.70713 14.0732 6.76713C12.5466 4.36713 10.3532 2.98047 7.9999 2.98047C5.64656 2.98047 3.45323 4.36713 1.92656 6.76713C1.32656 7.70713 1.32656 9.28713 1.92656 10.2271C3.45323 12.6271 5.64656 14.0138 7.9999 14.0138Z"
+                                        stroke="#9CA5B3" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span class="text-[#9CA5B3] text-[14px] font-bold">Views</span>
+                            </div>
+
+                            <span class="font-bold">16</span>
+                        </div>
+
+                        <div class="bg-[#FAFAFC] rounded-lg flex justify-between py-1 px-3">
+
+                            <div class="flex items-center  gap-2">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.3332 8.93359V11.4003C12.3332 13.4803 10.3932 15.1669 7.99984 15.1669C5.6065 15.1669 3.6665 13.4803 3.6665 11.4003V8.93359C3.6665 11.0136 5.6065 12.5003 7.99984 12.5003C10.3932 12.5003 12.3332 11.0136 12.3332 8.93359Z"
+                                        stroke="#9CA5B3" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12.3332 5.5987C12.3332 6.20537 12.1665 6.76536 11.8732 7.24536C11.1598 8.4187 9.69317 9.16536 7.99984 9.16536C6.3065 9.16536 4.83984 8.4187 4.12651 7.24536C3.83317 6.76536 3.6665 6.20537 3.6665 5.5987C3.6665 4.5587 4.15317 3.6187 4.93317 2.9387C5.71983 2.25203 6.79984 1.83203 7.99984 1.83203C9.19984 1.83203 10.2798 2.25203 11.0665 2.93203C11.8465 3.6187 12.3332 4.5587 12.3332 5.5987Z"
+                                        stroke="#9CA5B3" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12.3332 5.5987V8.93203C12.3332 11.012 10.3932 12.4987 7.99984 12.4987C5.6065 12.4987 3.6665 11.012 3.6665 8.93203V5.5987C3.6665 3.5187 5.6065 1.83203 7.99984 1.83203C9.19984 1.83203 10.2798 2.25203 11.0665 2.93203C11.8465 3.6187 12.3332 4.5587 12.3332 5.5987Z"
+                                        stroke="#9CA5B3" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                                <span class="text-[#9CA5B3] text-[14px] font-bold">Sales</span>
+                            </div>
+
+                            <span class="font-bold">2</span>
+                        </div>
+                    </div>
+
+
+                    <div class="flex gap-[22px]">
+                        <button
+                            class="w-full border-[#F2F2F2] border-[1px] flex justify-center items-center gap-[5px] rounded-xl py-[14px] hover:opacity-70 active:opacity-60 transition-all">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.33203 1.83203H5.9987C2.66536 1.83203 1.33203 3.16536 1.33203 6.4987V10.4987C1.33203 13.832 2.66536 15.1654 5.9987 15.1654H9.9987C13.332 15.1654 14.6654 13.832 14.6654 10.4987V9.16536"
+                                    stroke="#575E6A" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M10.6933 2.51155L5.43992 7.76488C5.23992 7.96488 5.03992 8.35822 4.99992 8.64488L4.71325 10.6515C4.60659 11.3782 5.11992 11.8849 5.84659 11.7849L7.85325 11.4982C8.13325 11.4582 8.52659 11.2582 8.73325 11.0582L13.9866 5.80488C14.8933 4.89822 15.3199 3.84488 13.9866 2.51155C12.6533 1.17822 11.5999 1.60488 10.6933 2.51155Z"
+                                    stroke="#575E6A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9.94141 3.26562C10.3881 4.85896 11.6347 6.10562 13.2347 6.55896"
+                                    stroke="#575E6A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>Edit</span>
+                        </button>
+
+                        <button
+                            class="w-full border-[#F2F2F2] border-[1px] flex justify-center items-center gap-[5px] rounded-xl py-[14px] hover:opacity-70 active:opacity-60 transition-all">
+                            <span class="text-[#9CA5B3]">Delete</span>
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14 4.48568C11.78 4.26568 9.54667 4.15234 7.32 4.15234C6 4.15234 4.68 4.21901 3.36 4.35234L2 4.48568"
+                                    stroke="#FF8E8E" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M5.6665 3.81203L5.81317 2.9387C5.91984 2.30536 5.99984 1.83203 7.1265 1.83203H8.87317C9.99984 1.83203 10.0865 2.33203 10.1865 2.94536L10.3332 3.81203"
+                                    stroke="#FF8E8E" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M12.5674 6.59375L12.1341 13.3071C12.0607 14.3537 12.0007 15.1671 10.1407 15.1671H5.86075C4.00075 15.1671 3.94075 14.3537 3.86742 13.3071L3.43408 6.59375"
+                                    stroke="#FF8E8E" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6.88721 11.5H9.10721" stroke="#FF8E8E" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6.3335 8.83203H9.66683" stroke="#FF8E8E" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -1881,8 +1882,7 @@
 
 
         <main class="bg-[#F1F3F9] gap-3 rounded-3xl sm:px-5 sm:pt-5 px-3 pt-3 pb-[43px] hidden" id="paused">
-            <div class="grid lg:grid-cols-4 gap-y-[15px] gap-x-3 md:grid-cols-2 sm:grid-cols-2 ">
-
+            <div class="grid lg:grid-cols-4 gap-y-[15px] gap-x-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 ">
                 <div class="bg-[#fff] max-w-[320px] rounded-[20px] sm:inline-block hidden bg-no-repeat bg-cover p-4"
                     style="background-image: url(./img/paused_section_img.png);">
 
@@ -1891,7 +1891,8 @@
                             <img src="./img/paused_section_user_img.png" alt="Monday image paused_section_img"
                                 width="75" height="75">
 
-                            <div class="bg-[#fff] p-[10px] absolute rounded-[100px] bottom-0 right-[-6px]">
+                            <div
+                                class="bg-[#fff] p-[10px] absolute rounded-[100px] bottom-0 right-[-6px] cursor-pointer">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -1915,7 +1916,7 @@
 
                 </div>
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -2066,7 +2067,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -2217,7 +2218,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -2378,7 +2379,8 @@
                                 <img src="./img/paused_section_user_img.png" alt="Monday image paused_section_img"
                                     width="75" height="75">
 
-                                <div class="bg-[#fff] p-[10px] absolute rounded-[100px] bottom-0 right-[-6px]">
+                                <div
+                                    class="bg-[#fff] p-[10px] absolute rounded-[100px] bottom-0 right-[-6px] cursor-pointer">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -2912,7 +2914,6 @@
         <main class="bg-[#F1F3F9] gap-3 rounded-3xl sm:px-5 sm:pt-5 px-3 pt-3 pb-[43px] hidden" id="all">
             <div class="grid lg:grid-cols-4 gap-y-[15px] gap-x-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 ">
                 <!--start for Desktop -->
-
                 <div class="bg-[#fff] max-w-[320px] rounded-[20px] sm:inline-block hidden bg-no-repeat bg-cover p-4"
                     style="background-image: url(./img/paused_section_img.png);">
 
@@ -2921,7 +2922,8 @@
                             <img src="./img/paused_section_user_img.png" alt="Monday image paused_section_img"
                                 width="75" height="75">
 
-                            <div class="bg-[#fff] p-[10px] absolute rounded-[100px] bottom-0 right-[-6px]">
+                            <div
+                                class="bg-[#fff] p-[10px] absolute rounded-[100px] bottom-0 right-[-6px] cursor-pointer">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -2945,7 +2947,7 @@
 
                 </div>
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -3096,7 +3098,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -3247,7 +3249,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -3399,7 +3401,7 @@
                 </div>
 
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -3555,7 +3557,7 @@
                 </div>
 
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -3712,7 +3714,7 @@
 
 
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -3868,7 +3870,7 @@
                 </div>
 
 
-                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden mx-auto ">
+                <div class="bg-[#fff] max-w-[320px] rounded-[20px] p-4 sm:inline-block hidden">
                     <div class="bg-[#EDF4FF] w-full h-[193px] rounded-2xl p-3 mb-3">
                         <div class="flex justify-between">
                             <button
@@ -4034,7 +4036,8 @@
                                 <img src="./img/paused_section_user_img.png" alt="Monday image paused_section_img"
                                     width="75" height="75">
 
-                                <div class="bg-[#fff] p-[10px] absolute rounded-[100px] bottom-0 right-[-6px]">
+                                <div
+                                    class="bg-[#fff] p-[10px] absolute rounded-[100px] bottom-0 right-[-6px] cursor-pointer">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
