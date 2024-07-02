@@ -1350,9 +1350,9 @@
     </div>
   </section>
 
-  <section class="pb-8 px-5">
+  <section class="pb-8 px-5 md:block hidden">
     <button id="static_toggle"
-      class="max-w-[1360px] w-full mx-auto md:flex items-center justify-between md:py-2 py-2 px-3 md:rounded-full rounded-xl md:bg-transparent bg-white border">
+      class="max-w-[1360px] md:cursor-pointer cursor-default w-full mx-auto md:flex items-center justify-between  py-2 px-3 md:rounded-full rounded-xl md:bg-transparent bg-white border">
       <div class="md:flex items-center gap-2.5 text-center mb-2.5 md:mb-0">
         <img class="w-11 h-11 mx-auto mb-2.5 md:mb-0" src="./img/avatar.png" alt="avatar">
         <p class="text-[#202020] font-bold text-xl">James_K statistics</p>
@@ -1366,228 +1366,238 @@
           </svg>
         </span>
       </div>
-      <button
+    </button>
+
+    <div id="static_info"
+      class="max-w-[1360px] mt-2.5 overflow-hidden gap-5 mx-auto bg-white p-6 rounded-[36px] max-h-0 transition-all duration-500 hidden">
+      <div class="lg:flex grid gap-4 items-center justify-between">
+        <div
+          class="bg-[#F1F3F9] md:flex hidden max-w-[880px] w-full justify-between gap-3.5 rounded-3xl px-5 py-4 items-center">
+          <div class="max-w-[413px] w-full ">
+            <div class="flex pt-2.5 pb-3 px-3 items-center rounded-t-[20px] justify-between bg-[#FAFAFC]">
+              <p class="text-[#202020] font-bold text-sm">
+                <span class="p-2.5 rounded-full border inline-flex">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.25 9.5H4C2 9.5 1 9 1 6.5V4C1 2 2 1 4 1H8C10 1 11 2 11 4V6.5C11 8.5 10 9.5 8 9.5H7.75C7.595 9.5 7.445 9.575 7.35 9.7L6.6 10.7C6.27 11.14 5.73 11.14 5.4 10.7L4.65 9.7C4.57 9.59 4.385 9.5 4.25 9.5Z"
+                      stroke="#575E6A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3.5 4H8.5" stroke="#575E6A" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3.5 6.5H6.5" stroke="#575E6A" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                Reviews
+              </p>
+              <p class="flex items-center gap-1 text-[#B7C3D6] font-bold text-xs">How it works <span><svg class="flex"
+                    width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
+                      stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9 6V9.75" stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M8.99609 12H9.00283" stroke="#B7C3D6" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span></p>
+            </div>
+            <div class="pr-5 flex items-center justify-between gap-2  pt-2 pl-4 pb-3.5 rounded-b-[20px] bg-white">
+              <div class="circular-progress-container">
+                <div class="circular-progress" data-percentage="80">
+                  <svg viewBox="0 0 150 150">
+                    <defs>
+                      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#6AB8FF;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#DEF5FF;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="67"></circle>
+                    <circle cx="80" cy="80" r="67"></circle>
+                  </svg>
+                  <div class="progress-background"></div>
+                  <span
+                    class="circular-progress-text text-[#202020] font-bold text-3xl z-20 absolute bottom-[76px]">0%</span>
+                  <span
+                    class="z-30 absolute bottom-[58px] text-[#B7C3D6] font-bold text-[11px] leading-4 uppercase">Positive
+                    reviews</span>
+                </div>
+              </div>
+              <div>
+                <ul>
+                  <li
+                    class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
+                    <div class="w-4 h-4 rounded-[5px] bg-[#EDF4FF]"></div> Positive<span
+                      class="ml-auto text-[#202020] text-2xl leading-8 font-bold">80</span>
+                  </li>
+                  <li
+                    class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
+                    <div class="w-4 h-4 rounded-[5px] bg-[#FFEEE7]"></div> negative<span
+                      class="ml-auto text-[#202020] text-2xl leading-8 font-bold">20</span>
+                  </li>
+                  <li
+                    class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
+                    <div class="w-4 h-4 rounded-[5px] bg-[#F1F3F9]"></div> no review<span
+                      class="ml-auto text-[#202020] text-2xl leading-8 font-bold">5</span>
+                  </li>
+                  <li
+                    class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
+                    <div class="w-4 h-4 rounded-[5px] bg-[#F1F3F9]"></div> No review, repeat orders<span
+                      class="ml-auto text-[#202020] text-2xl leading-8 font-bold">2</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-[413px] w-full ">
+            <div class="flex pt-2.5 pb-3 px-3 items-center rounded-t-[20px] justify-between bg-[#FAFAFC]">
+              <p class="text-[#202020] font-bold text-sm">
+                <span class="p-2.5 rounded-full border inline-flex">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6 7.5C7.86396 7.5 9.375 6.04493 9.375 4.25C9.375 2.45507 7.86396 1 6 1C4.13604 1 2.625 2.45507 2.625 4.25C2.625 6.04493 4.13604 7.5 6 7.5Z"
+                      stroke="#575E6A" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M3.76085 6.76187L3.75586 10.4519C3.75586 10.9019 4.07086 11.1219 4.46086 10.9369L5.80086 10.3019C5.91086 10.2469 6.09586 10.2469 6.20586 10.3019L7.55086 10.9369C7.93586 11.1169 8.25586 10.9019 8.25586 10.4519V6.67188"
+                      stroke="#575E6A" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                Responsibility
+              </p>
+              <p class="flex items-center gap-1 text-[#B7C3D6] font-bold text-xs">How it works <span><svg class="flex"
+                    width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
+                      stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9 6V9.75" stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M8.99609 12H9.00283" stroke="#B7C3D6" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span></p>
+            </div>
+            <div class="pr-5 flex items-center justify-between gap-2  pt-2 pl-4 pb-3.5 rounded-b-[20px] bg-white">
+              <div class="circular-progress-container">
+                <div class="circular-progress" data-percentage="95">
+                  <svg viewBox="0 0 150 150">
+                    <defs>
+                      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#6AB8FF;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#DEF5FF;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="67"></circle>
+                    <circle cx="80" cy="80" r="67"></circle>
+                  </svg>
+                  <div class="progress-background"></div>
+                  <span
+                    class="circular-progress-text text-[#202020] font-bold text-3xl z-20 absolute bottom-[76px]">0%</span>
+                  <span
+                    class="z-30 absolute bottom-[58px] text-[#B7C3D6] font-bold text-[11px] leading-4 uppercase">completed</span>
+                </div>
+              </div>
+              <div>
+                <ul>
+                  <li
+                    class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
+                    <div class="w-4 h-4 rounded-[5px] bg-[#EDF4FF]"></div>completed<span
+                      class="ml-auto text-[#202020] text-2xl leading-8 font-bold">107</span>
+                  </li>
+                  <li
+                    class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
+                    <div class="w-4 h-4 rounded-[5px] bg-[#FFEEE7]"></div>Canceled<span
+                      class="ml-auto text-[#202020] text-2xl leading-8 font-bold">1</span>
+                  </li>
+                  <li
+                    class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
+                    <div class="w-4 h-4 rounded-[5px] bg-[#FFEEE7]"></div>Auto-canceled<span
+                      class="ml-auto text-[#202020] text-2xl leading-8 font-bold">0</span>
+                  </li>
+                  <li
+                    class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
+                    <div class="w-4 h-4 rounded-[5px] bg-[#FFEEE7]"></div>Canceled favour, to Buyer<span
+                      class="ml-auto text-[#202020] text-2xl leading-8 font-bold">0</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:max-w-[413px] md:block hidden w-full bg-[#F1F3F9] rounded-3xl p-4">
+          <div class="mb-3.5">
+            <ul class="flex items-center justify-between gap-2.5">
+              <li class="max-w-[121px] flex flex-col bg-white rounded-[20px] w-full">
+                <div class="bg-[#FAFAFC] p-2.5 rounded-t-[20px]">
+                  <img class="border p-2.5 rounded-full mb-1.5" src="./img/static/1.svg" alt="service">
+                  <h3 class="text-[#202020] font-bold text-sm">Active <br> services</h3>
+                </div>
+                <div class="pl-4 mt-auto mb-1.5 pt-7">
+                  <span class="text-[#202020] font-bold text-2xl">3</span>
+                </div>
+              </li>
+              <li class="max-w-[121px] flex flex-col bg-white rounded-[20px] w-full">
+                <div class="bg-[#FAFAFC] p-2.5 rounded-t-[20px]">
+                  <img class="border p-2.5 rounded-full mb-1.5" src="./img/static/2.svg" alt="views">
+                  <h3 class="text-[#202020] font-bold text-sm">Service <br> Views</h3>
+                </div>
+                <div class="pl-4 mt-auto mb-1.5 pt-7">
+                  <span class="text-[#202020] font-bold text-2xl">48</span>
+                </div>
+              </li>
+              <li class="max-w-[121px] flex flex-col bg-white rounded-[20px] w-full">
+                <div class="bg-[#FAFAFC] p-2.5 rounded-t-[20px]">
+                  <img class="border p-2.5 rounded-full mb-1.5" src="./img/static/3.svg" alt="favourite">
+                  <h3 class="text-[#202020] font-bold text-sm">Added in <br> favourites</h3>
+                </div>
+                <div class="pl-4 mt-auto mb-1.5 pt-7">
+                  <span class="text-[#202020] font-bold text-2xl">5</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-[#202020] uppercase font-bold text-xs mb-1">CONVERSION</h3>
+            <div id="long__bar-container" class="w-full rounded-full h-2.5 mb-1 bg-[#FAFAFC] relative">
+              <div id="long__bar" class="h-full rounded-full absolute left-0 top-0"></div>
+            </div>
+            <div class="flex items-center justify-between">
+              <p id="long_bar-percentage" class="text-[#202020] font-bold text-3xl leading-10">
+                0<span class="text-[#B7C3D6] font-medium">%</span>
+              </p>
+              <p class="text-[#4790FF] cursor-pointer flex items-center gap-1 font-bold text-sm">Great
+                <span>
+                  <svg class="flex" width="18" height="19" viewBox="0 0 18 19" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9 17C13.125 17 16.5 13.625 16.5 9.5C16.5 5.375 13.125 2 9 2C4.875 2 1.5 5.375 1.5 9.5C1.5 13.625 4.875 17 9 17Z"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9 6.5V10.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M8.99609 12.5H9.00283" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="md:hidden block" >
+    <div class="w-full px-3 mb-14" >
+      <div class="px-4 pb-3 pt-6 bg-white border rounded-[20px]" >
+        <img class="w-[45px] h-[45px] mx-auto mb-2.5" src="./img/avatar.png" alt="avatar">
+        <p class="text-[#202020] font-bold text-[20px] mb-2.5 text-center" >James_K statistics</p>
+        <button
         class="gradient_btn py-3 w-full rounded-xl justify-center text-white font-bold text-base md:hidden flex items-center gap-1 cursor-pointer">
         Show statistics
-        <span class="svg-container">
+        <span>
           <svg class="flex" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 11L12.5 15L17 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
           </svg>
         </span>
       </button>
-    </button>
-    
-      <div id="static_info"
-        class="max-w-[1360px] mt-2.5 overflow-hidden gap-5 mx-auto bg-white p-6 rounded-[36px] max-h-0 transition-all duration-500 hidden">
-        <div class="lg:flex grid gap-4 items-center justify-between" >
-          <div
-            class="bg-[#F1F3F9] md:flex hidden max-w-[880px] w-full justify-between gap-3.5 rounded-3xl px-5 py-4 items-center">
-            <div class="max-w-[413px] w-full ">
-              <div class="flex pt-2.5 pb-3 px-3 items-center rounded-t-[20px] justify-between bg-[#FAFAFC]">
-                <p class="text-[#202020] font-bold text-sm">
-                  <span class="p-2.5 rounded-full border inline-flex">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M4.25 9.5H4C2 9.5 1 9 1 6.5V4C1 2 2 1 4 1H8C10 1 11 2 11 4V6.5C11 8.5 10 9.5 8 9.5H7.75C7.595 9.5 7.445 9.575 7.35 9.7L6.6 10.7C6.27 11.14 5.73 11.14 5.4 10.7L4.65 9.7C4.57 9.59 4.385 9.5 4.25 9.5Z"
-                        stroke="#575E6A" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3.5 4H8.5" stroke="#575E6A" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3.5 6.5H6.5" stroke="#575E6A" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </span>
-                  Reviews
-                </p>
-                <p class="flex items-center gap-1 text-[#B7C3D6] font-bold text-xs">How it works <span><svg class="flex"
-                      width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
-                        stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M9 6V9.75" stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M8.99609 12H9.00283" stroke="#B7C3D6" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg></span></p>
-              </div>
-              <div class="pr-5 flex items-center justify-between gap-2  pt-2 pl-4 pb-3.5 rounded-b-[20px] bg-white">
-                <div class="circular-progress-container">
-                  <div class="circular-progress" data-percentage="80">
-                    <svg viewBox="0 0 150 150">
-                      <defs>
-                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" style="stop-color:#6AB8FF;stop-opacity:1" />
-                          <stop offset="100%" style="stop-color:#DEF5FF;stop-opacity:1" />
-                        </linearGradient>
-                      </defs>
-                      <circle cx="80" cy="80" r="67"></circle>
-                      <circle cx="80" cy="80" r="67"></circle>
-                    </svg>
-                    <div class="progress-background"></div>
-                    <span
-                      class="circular-progress-text text-[#202020] font-bold text-3xl z-20 absolute bottom-[76px]">0%</span>
-                    <span
-                      class="z-30 absolute bottom-[58px] text-[#B7C3D6] font-bold text-[11px] leading-4 uppercase">Positive
-                      reviews</span>
-                  </div>
-                </div>
-                <div>
-                  <ul>
-                    <li
-                      class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
-                      <div class="w-4 h-4 rounded-[5px] bg-[#EDF4FF]"></div> Positive<span
-                        class="ml-auto text-[#202020] text-2xl leading-8 font-bold">80</span>
-                    </li>
-                    <li
-                      class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
-                      <div class="w-4 h-4 rounded-[5px] bg-[#FFEEE7]"></div> negative<span
-                        class="ml-auto text-[#202020] text-2xl leading-8 font-bold">20</span>
-                    </li>
-                    <li
-                      class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
-                      <div class="w-4 h-4 rounded-[5px] bg-[#F1F3F9]"></div> no review<span
-                        class="ml-auto text-[#202020] text-2xl leading-8 font-bold">5</span>
-                    </li>
-                    <li
-                      class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
-                      <div class="w-4 h-4 rounded-[5px] bg-[#F1F3F9]"></div> No review, repeat orders<span
-                        class="ml-auto text-[#202020] text-2xl leading-8 font-bold">2</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="max-w-[413px] w-full ">
-              <div class="flex pt-2.5 pb-3 px-3 items-center rounded-t-[20px] justify-between bg-[#FAFAFC]">
-                <p class="text-[#202020] font-bold text-sm">
-                  <span class="p-2.5 rounded-full border inline-flex">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M6 7.5C7.86396 7.5 9.375 6.04493 9.375 4.25C9.375 2.45507 7.86396 1 6 1C4.13604 1 2.625 2.45507 2.625 4.25C2.625 6.04493 4.13604 7.5 6 7.5Z"
-                        stroke="#575E6A" stroke-linecap="round" stroke-linejoin="round" />
-                      <path
-                        d="M3.76085 6.76187L3.75586 10.4519C3.75586 10.9019 4.07086 11.1219 4.46086 10.9369L5.80086 10.3019C5.91086 10.2469 6.09586 10.2469 6.20586 10.3019L7.55086 10.9369C7.93586 11.1169 8.25586 10.9019 8.25586 10.4519V6.67188"
-                        stroke="#575E6A" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </span>
-                  Responsibility
-                </p>
-                <p class="flex items-center gap-1 text-[#B7C3D6] font-bold text-xs">How it works <span><svg class="flex"
-                      width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9 16.5C13.125 16.5 16.5 13.125 16.5 9C16.5 4.875 13.125 1.5 9 1.5C4.875 1.5 1.5 4.875 1.5 9C1.5 13.125 4.875 16.5 9 16.5Z"
-                        stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M9 6V9.75" stroke="#B7C3D6" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M8.99609 12H9.00283" stroke="#B7C3D6" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg></span></p>
-              </div>
-              <div class="pr-5 flex items-center justify-between gap-2  pt-2 pl-4 pb-3.5 rounded-b-[20px] bg-white">
-                <div class="circular-progress-container">
-                  <div class="circular-progress" data-percentage="95">
-                    <svg viewBox="0 0 150 150">
-                      <defs>
-                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" style="stop-color:#6AB8FF;stop-opacity:1" />
-                          <stop offset="100%" style="stop-color:#DEF5FF;stop-opacity:1" />
-                        </linearGradient>
-                      </defs>
-                      <circle cx="80" cy="80" r="67"></circle>
-                      <circle cx="80" cy="80" r="67"></circle>
-                    </svg>
-                    <div class="progress-background"></div>
-                    <span
-                      class="circular-progress-text text-[#202020] font-bold text-3xl z-20 absolute bottom-[76px]">0%</span>
-                    <span
-                      class="z-30 absolute bottom-[58px] text-[#B7C3D6] font-bold text-[11px] leading-4 uppercase">completed</span>
-                  </div>
-                </div>
-                <div>
-                  <ul>
-                    <li
-                      class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
-                      <div class="w-4 h-4 rounded-[5px] bg-[#EDF4FF]"></div>completed<span
-                        class="ml-auto text-[#202020] text-2xl leading-8 font-bold">107</span>
-                    </li>
-                    <li
-                      class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
-                      <div class="w-4 h-4 rounded-[5px] bg-[#FFEEE7]"></div>Canceled<span
-                        class="ml-auto text-[#202020] text-2xl leading-8 font-bold">1</span>
-                    </li>
-                    <li
-                      class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
-                      <div class="w-4 h-4 rounded-[5px] bg-[#FFEEE7]"></div>Auto-canceled<span
-                        class="ml-auto text-[#202020] text-2xl leading-8 font-bold">0</span>
-                    </li>
-                    <li
-                      class="flex items-center gap-1 text-[#575E6A] font-bold text-xs capitalize py-1 border-b border-b-[#F2F2F2]">
-                      <div class="w-4 h-4 rounded-[5px] bg-[#FFEEE7]"></div>Canceled favour, to Buyer<span
-                        class="ml-auto text-[#202020] text-2xl leading-8 font-bold">0</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="lg:max-w-[413px] md:block hidden w-full bg-[#F1F3F9] rounded-3xl p-4">
-            <div class="mb-3.5">
-              <ul class="flex items-center justify-between gap-2.5">
-                <li class="max-w-[121px] flex flex-col bg-white rounded-[20px] w-full">
-                  <div class="bg-[#FAFAFC] p-2.5 rounded-t-[20px]">
-                    <img class="border p-2.5 rounded-full mb-1.5" src="./img/static/1.svg" alt="service">
-                    <h3 class="text-[#202020] font-bold text-sm">Active <br> services</h3>
-                  </div>
-                  <div class="pl-4 mt-auto mb-1.5 pt-7">
-                    <span class="text-[#202020] font-bold text-2xl">3</span>
-                  </div>
-                </li>
-                <li class="max-w-[121px] flex flex-col bg-white rounded-[20px] w-full">
-                  <div class="bg-[#FAFAFC] p-2.5 rounded-t-[20px]">
-                    <img class="border p-2.5 rounded-full mb-1.5" src="./img/static/2.svg" alt="views">
-                    <h3 class="text-[#202020] font-bold text-sm">Service <br> Views</h3>
-                  </div>
-                  <div class="pl-4 mt-auto mb-1.5 pt-7">
-                    <span class="text-[#202020] font-bold text-2xl">48</span>
-                  </div>
-                </li>
-                <li class="max-w-[121px] flex flex-col bg-white rounded-[20px] w-full">
-                  <div class="bg-[#FAFAFC] p-2.5 rounded-t-[20px]">
-                    <img class="border p-2.5 rounded-full mb-1.5" src="./img/static/3.svg" alt="favourite">
-                    <h3 class="text-[#202020] font-bold text-sm">Added in <br> favourites</h3>
-                  </div>
-                  <div class="pl-4 mt-auto mb-1.5 pt-7">
-                    <span class="text-[#202020] font-bold text-2xl">5</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-[#202020] uppercase font-bold text-xs mb-1">CONVERSION</h3>
-              <div id="long__bar-container" class="w-full rounded-full h-2.5 mb-1 bg-[#FAFAFC] relative">
-                <div id="long__bar" class="h-full rounded-full absolute left-0 top-0"></div>
-              </div>
-              <div class="flex items-center justify-between">
-                <p id="long_bar-percentage" class="text-[#202020] font-bold text-3xl leading-10">
-                  0<span class="text-[#B7C3D6] font-medium">%</span>
-                </p>
-                <p class="text-[#4790FF] cursor-pointer flex items-center gap-1 font-bold text-sm">Great
-                  <span>
-                    <svg class="flex" width="18" height="19" viewBox="0 0 18 19" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M9 17C13.125 17 16.5 13.625 16.5 9.5C16.5 5.375 13.125 2 9 2C4.875 2 1.5 5.375 1.5 9.5C1.5 13.625 4.875 17 9 17Z"
-                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M9 6.5V10.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M8.99609 12.5H9.00283" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </svg>
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+      
+    </div>
   </section>
 
   <footer class="bg-[#202020] lg:pt-[125px] pt-12 lg:pb-[70px] pb-[60px]">
