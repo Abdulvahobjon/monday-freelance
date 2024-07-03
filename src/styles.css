@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'satoshi' , sans-serif;
+    font-family: 'satoshi', sans-serif;
     src: url(../public/Fonts/OTF/Satoshi-Medium.otf);
 }
-body{
-    font-family: 'satoshi' , sans-serif;
+
+body {
+    font-family: 'satoshi', sans-serif;
 }
 
 .animated-underline {
@@ -30,19 +31,46 @@ body{
     width: 100%;
 }
 
-.header_active{
-    color: #202020;
-    border-bottom: 2px solid var(--accent-blue, #4790FF)
+.header_active {
+    color: #202020 !important;
+    border-bottom: 2px solid var(--accent-blue, #4790FF) !important;
 }
 
-.btn_active{
-    color: #4790FF;
-    border: 1px solid var(--stroke-light, #F2F2F2);
-    background-color: var(--fill-light-blue, #EDF4FF);
+.btn_active {
+    color: #4790FF !important;
+    border: 1px solid var(--stroke-light, #F2F2F2) !important;
+    background-color: var(--fill-light-blue, #EDF4FF) !important;
 }
-.gradient_btn{
+
+.gradient_btn {
     background: linear-gradient(90deg, #6AB8FF 0%, #DEF5FF 136.52%);
 }
+
 .transition-height {
     transition: height 0.3s ease;
+}
+
+.search_shadow {
+    box-shadow: 5px 10px 40px 2px #0000000D;
+}
+
+.search-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-icon.clicked {
+    transform: rotate(90deg);
+}
+
+.like-button svg path {
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+.service_shadow{
+    box-shadow: 0px 3.17px 31.73px 0px #0000000D;
+}
+.service_mobile{
+    box-shadow: 0px 4px 40px 0px #0000000D;
+}
+.verification_shadow{
+    background: linear-gradient(43.66deg, #FBFCFF 24.62%, #F2F5FD 69.53%, rgba(255, 255, 255, 0.69) 95.65%) ;
 }

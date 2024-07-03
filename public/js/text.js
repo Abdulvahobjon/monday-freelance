@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById('toggle-button');
     const fullText = textElement.innerText;
     const words = fullText.split(' ');
-    const previewText = words.slice(0, 19).join(' ') + '...';
+    const previewText = words.slice(0, 19).join(' ') + '..';
 
     let isExpanded = false;
 
