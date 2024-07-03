@@ -266,7 +266,19 @@
             </div>
         </div>
     </header>
-
+    <script>
+        let header_items = document.querySelectorAll('#header_item')
+    
+        header_items.forEach(function (item, index) {
+          item.addEventListener('click', function () {
+            header_items.forEach(function (item) {
+              item.classList.remove('header_active')
+            })
+    
+            item.classList.add('header_active')
+          })
+        })
+      </script>
 
     <!-- INFORMATION FOR PERFOMERS SECTION STARTED HERE -->
     <section class="pt-4 pb-5 md:pt-9 md:pb-4">
