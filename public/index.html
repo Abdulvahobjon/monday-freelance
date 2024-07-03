@@ -70,74 +70,53 @@
     background: linear-gradient(90deg, #6AB8FF 0%, #DEF5FF 136.52%);
   }
 
+  .circular-progress {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  .circular-progress svg {
+    width: 170px;
+    height: 170px;
+    transform: translateX(-2px);
+    transform: translateY(-5px);
+    background-color: #FAFAFC;
+  }
+
+  .circular-progress circle {
+    stroke-width: 16px;
+    fill: none;
+    stroke-linecap: round;
+    transform: translateX(-5px);
+  }
+
+  .circular-progress circle:nth-child(2) {
+    stroke: url(#gradient);
+    stroke-dasharray: 380;
+    stroke-dashoffset: 380;
+    transition: stroke-dashoffset 0.35s;
+  }
+
+  .progress-background {
+    width: 130px;
+    height: 130px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .rotate-icon svg {
-    .circular-progress {
-      width: 160px;
-      height: 160px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 10px;
-    }
-
-    .circular-progress svg {
-      width: 170px;
-      height: 170px;
-      transform: translateX(-2px);
-      transform: translateY(-5px);
-      background-color: #FAFAFC;
-    }
-
-    .circular-progress circle {
-      stroke-width: 16px;
-      fill: none;
-      stroke-linecap: round;
-      transform: translateX(-5px);
-    }
-
-    .circular-progress circle:nth-child(2) {
-      stroke: url(#gradient);
-      stroke-dasharray: 380;
-      stroke-dashoffset: 380;
-      transition: stroke-dashoffset 0.35s;
-    }
-
-    /* .circular-progress-text {
-      font-size: 1.5rem;
-      font-weight: 700;
-      z-index: 1;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    } */
-
-    .progress-background {
-      width: 130px;
-      height: 130px;
-      background-color: white;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .rotate-icon svg {
-      transition: transform 0.5s;
-    }
-
-    .rotate-180 {
-      transform: rotate(180deg);
-    }
-
-    .hidden-content {
-      opacity: 0;
-      max-height: 0;
-    }
+    transition: transform 0.5s;
   }
 
   .rotate-180 {
@@ -148,11 +127,21 @@
     opacity: 0;
     max-height: 0;
   }
+
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+
+  .hidden-content {
+    opacity: 0;
+    max-height: 0;
+  }
+
   .progress-bar {
-            background: linear-gradient(90deg, #6ab8ff 0%, #def5ff 136.52%);
-            width: 0;
-            transition: width 2s;
-        }
+    background: linear-gradient(90deg, #6ab8ff 0%, #def5ff 136.52%);
+    width: 0;
+    transition: width 2s;
+  }
 </style>
 
 <body class="bg-[#F1F3F9]">
@@ -1583,24 +1572,24 @@
     </div>
 
     <button id="static_toggle_2"
-    class="max-w-[1360px] md:hidden cursor-pointer border md:cursor-pointer w-full mx-auto flex items-center justify-between py-2 px-3 md:rounded-full rounded-xl bg-transparent mb-1">
-    <div class="flex items-center gap-2 text-[#575E6A] font-bold text-xs capitalize.5 text-center">
-      <img class="w-11 h-11 mb-0" src="./img/avatar.png" alt="avatar" />
-      <p class="text-[#202020] font-bold text-xl">James_K statistics</p>
-    </div>
-    <div class="md:text-[#4790FF] text-[#202020] font-bold text-base flex items-center gap-1 cursor-pointer">
-      <span class="md:block hidden">Show statistics</span>
-      <span class="svg-container-2">
-        <svg class="flex" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 11L12.5 15L17 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </span>
-    </div>
+      class="max-w-[1360px] md:hidden cursor-pointer border md:cursor-pointer w-full mx-auto flex items-center justify-between py-2 px-3 md:rounded-full rounded-xl bg-transparent mb-1">
+      <div class="flex items-center gap-2 text-[#575E6A] font-bold text-xs capitalize.5 text-center">
+        <img class="w-11 h-11 mb-0" src="./img/avatar.png" alt="avatar" />
+        <p class="text-[#202020] font-bold text-xl">James_K statistics</p>
+      </div>
+      <div class="md:text-[#4790FF] text-[#202020] font-bold text-base flex items-center gap-1 cursor-pointer">
+        <span class="md:block hidden">Show statistics</span>
+        <span class="svg-container-2">
+          <svg class="flex" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 11L12.5 15L17 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </span>
+      </div>
     </button>
 
     <div id="static_info_2" class="md:hidden p-4  overflow-hidden mx-auto  max-h-0 transition-all duration-500 hidden">
-      <div class="flex flex-col gap-1 bg-white rounded-2xl mb-1" >
+      <div class="flex flex-col gap-1 bg-white rounded-2xl mb-1">
         <div class="p-4 bg-[#FAFAFC] rounded-2xl">
           <div class="border rounded-[14px] flex items-center justify-between py-2 px-2.5 mb-1">
             <p class="flex items-center gap-1 text-[#202020] font-bold text-xs">
@@ -1635,7 +1624,7 @@
             <h3 class="text-[#B7C3D6] text-xs uppercase mb-1 font-bold">
               Positive reviews
             </h3>
-  
+
             <div class="progress-container" data-percentage-2="80">
               <div class="w-full rounded-full h-2.5 mb-1 bg-[#FAFAFC] relative">
                 <div class="progress-bar h-full rounded-full absolute left-0 top-0"></div>
@@ -1713,7 +1702,7 @@
             <h3 class="text-[#B7C3D6] text-xs uppercase mb-1 font-bold">
               Positive reviews
             </h3>
-  
+
             <div class="progress-container" data-percentage-2="95">
               <div class="w-full rounded-full h-2.5 mb-1 bg-[#FAFAFC] relative">
                 <div class="progress-bar h-full rounded-full absolute left-0 top-0"></div>
@@ -1769,7 +1758,7 @@
                     d="M11.151 3.75C11.151 5.185 10.056 6.36 8.65102 6.485V6.125C8.65102 4.25 7.90102 3.5 6.02602 3.5H5.66602C5.79102 2.095 6.96602 1 8.40102 1C9.79602 1 10.946 2.035 11.121 3.385C11.141 3.5 11.151 3.625 11.151 3.75Z"
                     stroke="#575E6A" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-  
+
               </span>
               <p class="text-[#202020] font-bold text-xs leading-4 pb-1 border-b">Active <br> services</p>
               <p class="text-[#202020] font-bold text-base text-center">3</p>
