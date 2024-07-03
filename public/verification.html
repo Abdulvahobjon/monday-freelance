@@ -11,10 +11,6 @@
 </head>
 
 <style>
-    body {
-        transition: all .3s;
-    }
-
     button {
         transition: all .3s;
     }
@@ -94,18 +90,6 @@
 
     #pass__btn {
         transition: all .3s;
-    }
-
-    #pass__btn:hover {
-        /* linear-gradient(90deg, #6AB8FF 0%, #DEF5FF 136.52%) */
-        /* transform: scale(1.1); */
-        box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px 0px inset, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.4) 0px 2px 4px 0px;
-    }
-
-    #pass__btn:active {
-        /* linear-gradient(90deg, #6AB8FF 0%, #DEF5FF 136.52%) */
-        /* transform: scale(1.1); */
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset;
     }
 </style>
 
@@ -380,16 +364,16 @@
         })
     </script>
 
-    <section class="pt-3 md:pt-[15px] md:pb-[104px] pb-11 relative">
-        <div class="w-full relative z-20 pt-5 md:pt-10 mx-auto px-5">
-            <div class="w-full rounded-3xl max-h-[271px] z-10 h-[271px] absolute left-0 top-0" style="
+    <section class="bg-[#F7F7F7] pt-3  md:pt-[15px] md:pb-[104px] pb-11 relative">
+        <div class="max-w-[1402px] relative z-20 pt-5 md:pt-10 mx-auto px-5">
+            <div class="w-full  max-h-[271px] z-10 h-[271px] absolute left-0 top-0" style="
       background-image: url(./img/verification/verification__bg.png);
       background-size: cover;
       background-position: center center;
     "></div>
-            <div class="max-w-[1360px] mx-auto relative z-20">
-                <div class="md:mb-[38px] mb-9">
-                    <div class="flex items-center gap-1.5 justify-center mb-2">
+            <div class="relative z-20">
+                <div class="mx-auto relative z-20 max-md:mb-[38px] mb-9">
+                    <div class="flex items-center gap-1.5 max-w-[222px] md:max-w-[314px] mx-auto mb-2">
                         <h1 class="font-bold text-2xl md:text-4xl text-[#202020] text-center">
                             User verification
                         </h1>
@@ -402,14 +386,13 @@
                         </svg>
                     </div>
                     <p class="font-medium max-md:text-sm text-base text-[#575E6A] text-center">
-                        When concluding transactions, priority is <br class="md:hidden block"> always <br
-                            class="md:block hidden"> given to the
+                        When concluding transactions, priority is always <br class="md:block hidden" > given to the
                         verified user.
                     </p>
                 </div>
                 <div
                     class="max-w-[1100px] max-lg:mb-10 max-lg:justify-between flex max-md:flex-col-reverse max-md:gap-2.5 items-center gap-4 ml-auto">
-                    <div class="bg-white rounded-[24px] mx-auto  max-w-[310px] pt-[60px] relative max-md:pt-[65px]"
+                    <div class="bg-white rounded-[24px] max-md:max-w-[280px] mx-auto lg:mx-0 max-w-[310px] pt-[60px] relative max-md:pt-[65px]"
                         style="box-shadow: 5px 10px 40px 2px #0000000d">
                         <div
                             class="absolute max-md:left-3 max-md:top-5 top-4 max-w-[280px] w-full max-md:h-[97px] h-[105px] left-4 rounded-2xl bg-[#F1F3F9] z-10 max-md:max-w-[256px]">
@@ -417,11 +400,12 @@
                         <div class="relative z-20">
                             <div
                                 class="flex items-end max-md:max-w-[233px] max-md:mb-1 max-w-[250px] justify-between mx-auto">
-                                <div class="max-w-[97px] h-[97px] border-[5px] border-white object-cover rounded-full" >
-                                    <img class="w-full"  src="./img/hero/avatar_big.png" alt="James Kilroy" />
+                                <div class="border-[5px] border-white rounded-full bg-white w-[97px] h-[97px]">
+                                    <img src="./img/hero/avatar_big.png" alt="James Kilroy"
+                                        class="w-full h-full object-cover rounded-full" />
                                 </div>
                                 <p
-                                    class="bg-[#FFF] text-[#575E6A] font-bold flex items-center gap-[5px] py-2.5 px-[18.5px] rounded-[100px] mb-[17px] max-md:text-xs">
+                                    class="bg-[#FFFFFFCC] flex text-[#575E6A] font-bold items-center gap-[5px] py-2.5 px-[18.5px] rounded-full mb-4 max-md:text-xs">
                                     Default
                                 </p>
                             </div>
@@ -432,8 +416,7 @@
                                 class="bg-[#FAFAFC] font-bold text-base max-md:text-sm text-[#575E6A] flex items-center jc  max-md:max-w-[260px] max-w-[275px] py-[11.5px] px-16 mb-4 rounded-[100px] mx-auto">
                                 Unverified account
                             </p>
-                            <div class="verification_shadow border border-[#F2F2F2] pt-5 pb-5"
-                                style="border-radius: 16px 16px 24px 24px">
+                            <div class="border border-[#F2F2F2] pt-5 pb-5" style="border-radius: 16px 16px 24px 24px">
                                 <ul
                                     class="flex flex-col gap-2.5 pb-5 border-b border-[#F2F2F2] pl-7 pr-[63px] mb-2.5 max-md:pt-[15px] max-md:pb5">
                                     <li class="flex items-center gap-2.5 font-bold text-xs md:text-sm text-[#575E6A]">
@@ -509,7 +492,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white rounded-[24px] mx-auto  max-w-[310px] pt-[60px] relative max-md:pt-[65px]"
+                    <div class="bg-white rounded-[24px] max-md:max-w-[280px] mx-auto lg:mx-0 max-w-[310px] pt-[60px] relative max-md:pt-[65px]"
                         style="box-shadow: 5px 10px 40px 2px #0000000d">
                         <div class="absolute max-md:left-3 max-md:top-5 top-4 max-w-[280px] w-full max-md:h-[97px] h-[105px] left-4 rounded-2xl bg-[#F1F3F9] z-10 max-md:max-w-[256px]"
                             style="
@@ -518,11 +501,12 @@
                         <div class="relative z-20">
                             <div
                                 class="flex items-end max-md:max-w-[233px] max-md:mb-1 max-w-[250px] justify-between mx-auto">
-                                <div class="max-w-[97px] h-[97px] border-[5px] border-white object-cover rounded-full" >
-                                    <img class="w-full"  src="./img/hero/avatar_big.png" alt="James Kilroy" />
+                                <div class="border-[5px] border-white rounded-full bg-white w-[97px] h-[97px]">
+                                    <img src="./img/hero/avatar_big.png" alt="James Kilroy"
+                                        class="w-full h-full object-cover rounded-full" />
                                 </div>
                                 <p
-                                    class="bg-[#FFF]/90 font-bold text-[#575E6A] flex items-center gap-[5px] py-2.5 px-[18.5px] rounded-[100px] mb-[17px] max-md:text-xs">
+                                    class="bg-[#FFFFFFCC] text-[#575E6A] backdrop-blur flex items-center gap-[5px] py-2.5 px-[18.5px] rounded-full mb-4 max-md:text-xs">
                                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -532,6 +516,7 @@
                                         <path d="M8 9.99479L9.66667 11.6615L13 8.32812" stroke="#575E6A"
                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
+
                                     Verified
                                 </p>
                             </div>
@@ -540,18 +525,9 @@
                             </h2>
                             <p class="bg-[#EDF4FF] font-bold max-md:text-sm text-base text-[#575E6A] flex items-center jc  max-md:max-w-[260px] max-w-[275px] py-[11.5px] px-16 mb-4 
                     rounded-[100px] mx-auto">
-                                <span style="
-            background: linear-gradient(
-              90deg,
-              #6ab8ff 0%,
-              #def5ff 136.52%
-            );
-            -webkit-background-clip: text;
-            color: transparent;
-          ">Verified Identity</span>
+                                <span style=" background: linear-gradient( 90deg, #6ab8ff 0%, #def5ff 136.52% ); -webkit-background-clip: text; color: transparent;">Verified Identity</span>
                             </p>
-                            <div class="verification_shadow border border-[#F2F2F2] pt-5 pb-5"
-                                style="border-radius: 16px 16px 24px 24px">
+                            <div class="border border-[#F2F2F2] pt-5 pb-5" style="border-radius: 16px 16px 24px 24px">
                                 <ul
                                     class="flex flex-col gap-2.5 pb-5 border-b border-[#F2F2F2] pl-7 pr-[63px] mb-2.5 max-md:pt-[15px] max-md:pb5">
                                     <li class="flex items-center gap-2.5 font-bold text-xs md:text-sm text-[#575E6A]">
@@ -630,11 +606,11 @@
                     </div>
                     <div class="max-lg:hidden ml-5">
                         <p class="max-w-[344px] font-medium text-sm text-[#575E6A] mb-5">
-                            Verification is recommended for all users of this resource - <a href="#" class="font-bold">both
-                                employers and freelancers.</a>
+                            Verification is recommended for all users of this resource - <span class="font-bold">both
+                                employers and freelancers.</span>
                         </p>
-                        <p class="max-w-[376px] w-full font-medium text-sm text-[#575E6A] mb-5">
-                            A verified user will have a special Identity <a href="#" class="font-bold">Verified icon</a>
+                        <p class="max-w-[376px] font-medium text-sm text-[#575E6A] mb-5">
+                            A verified user will have a special Identity <span class="font-bold">Verified icon</span>
                             <svg class="inline-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_b_1272_22965)">
@@ -662,18 +638,18 @@
 
                         </p>
                         <p class="font-medium text-sm text-[#575E6A] mb-7">
-                            This allows other users to <a href="#" class="font-bold">increase their trust</a> in the user.
+                            This allows other users to <span class="font-bold">increase their trust</span> in the user.
                         </p>
                         <label class="custom-checkbox mb-5">
                             <input type="checkbox" />
                             <span class="checkmark"></span>
-                            <div class="lg:max-w-[405px] w-full">
+                            <div class="max-w-[389px]">
                                 I confirm my consent to the processing and storage of personal data transmitted by me
                                 during verification.
                             </div>
                         </label>
                         <button id="pass__btn"
-                            class=" flex items-center gap-2 rounded-xl font-medium text-base text-white px-[59px] py-[14px]"
+                            class="flex hover:opacity-85 transition-all items-center gap-2 rounded-xl font-medium text-base text-white px-[59px] py-[14px]"
                             style="
                 background: linear-gradient(90deg, #6AB8FF 0%, #DEF5FF 136.52%);
                     ">
@@ -691,12 +667,12 @@
 
                     </div>
                 </div>
-                <div class="lg:hidden lg:max-w-[449px] w-full max-md:mx-auto ">
-                    <p class="lg:max-w-[344px] w-full font-medium text-sm text-[#575E6A] mb-5">
+                <div class="lg:hidden max-w-[449px] max-md:mx-auto ">
+                    <p class="max-w-[344px] font-medium text-sm text-[#575E6A] mb-5">
                         Verification is recommended for all users of this resource - <span class="font-bold">both
                             employers and freelancers.</span>
                     </p>
-                    <p class="lg:max-w-[376px] w-full font-medium text-sm text-[#575E6A] mb-5">
+                    <p class="max-w-[376px] font-medium text-sm text-[#575E6A] mb-5">
                         A verified user will have a special Identity <span class="font-bold">Verified icon</span>
                         <svg class="inline-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -730,7 +706,7 @@
                     <label class="custom-checkbox mb-5">
                         <input type="checkbox" />
                         <span class="checkmark"></span>
-                        <div class="lg:max-w-[405px] w-full max-md:text-xs">
+                        <div class="max-w-[405px] max-md:text-xs">
                             I confirm my consent to the processing and storage of personal data transmitted by me during
                             verification.
                         </div>
@@ -756,7 +732,7 @@
     </section>
     <div id="verification__modal__backdrop"
         class="hidden fixed top-0 left-0 w-full h-screen bg-[rgb(32,32,32,.8)] z-30"></div>
-    <form id="verification__modal" class="fixed  scale-0 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-40 bg-white rounded-[36px] 
+    <form id="verification__modal" class="fixed scale-0 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-40 bg-white rounded-[36px] 
 max-md:max-w-[313px] max-w-[596px] w-full max-md:p-[15px] p-5">
         <div class="flex items-center justify-between mb-6">
             <div class="flex items-center gap-1 font-bold max-md:text-base text-xl text-[#202020]">
@@ -771,14 +747,13 @@ max-md:max-w-[313px] max-w-[596px] w-full max-md:p-[15px] p-5">
                 </div>
                 Verify identity
             </div>
-            <butto id="verification__modal__close" class="w-10 h-10">
+            <div id="verification__modal__close" class="w-10 h-10 cursor-pointer">
                 <svg width="" height="" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="40" height="40" rx="12" fill="#FAFAFC" />
                     <path d="M25.5 14.5L14.5 25.5M14.5 14.5L25.5 25.5" stroke="#9CA5B3" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-
-            </butto>
+            </div>
         </div>
         <div class="flex max-md:flex-col md:items-center max-md:gap-[18px] gap-3.5">
             <label for="file"
@@ -795,24 +770,24 @@ max-md:max-w-[313px] max-w-[596px] w-full max-md:p-[15px] p-5">
                         stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 Upload File
-                <input type="file" name="file" id="file" class="hidden">
+                <input required type="file" name="file" id="file" class="hidden">
             </label>
             <div class="">
                 <h1 class="font-bold max-md:text-base text-xl text-[#202020] md:mb-[15px]">Select a scanned passport
                     photo</h1>
-                <ul class="flex flex-col gap-1 list-disc text-[#9CA5B3] pl-[15px] max-md:mb-3 mb-5  ">
-                    <li class="font-bold text-sm">Image format: <span class="font-bold text-black">PNG, JPG,
-                            JPEG,GIF</span></li>
+                <ul class="flex flex-col gap-1 list-disc text-[#9CA5B3] pl-[15px] max-md:mb-3 mb-5">
+                    <li class="font-bold text-sm">Image format: <span class=" font-bold text-black">PNG, JPG, JPEG,
+                            GIF</span></li>
                     <li class="font-bold text-sm">Maximum image size <span class="font-bold text-black">1.2 mb</span>
                     </li>
                 </ul>
-                <p class="font-bold text-xs text-[#575E6A] max-md:mb-3 mb-[15px]">No file chosen</p>
-                <button submit
-                    class="bg-[#EDF4FF] hover:bg-[#4790FF] hover:text-[#EDF4FF] rounded-xl md:max-w-[226px]  w-full py-4 px-[70px] font-bold text-sm text-[#4790FF]">Send
+                <p id="fileName" class="font-bold text-xs text-[#575E6A] max-md:mb-3 mb-[15px]">No file chosen</p>
+                <button type="submit"
+                    class="bg-[#EDF4FF] hover:bg-[#4790FF] hover:text-[#EDF4FF] rounded-xl md:max-w-[226px] w-full py-4 px-[70px] font-bold text-sm text-[#4790FF]">Send
                     photo</button>
             </div>
         </div>
-        </div>
+        <img id="uploadedImage" src="" alt="" class="hidden mt-4 max-w-full h-auto rounded-lg">
     </form>
 
     <footer class="bg-[#202020] lg:pt-[125px] pt-12 lg:pb-[70px] pb-[60px]">
