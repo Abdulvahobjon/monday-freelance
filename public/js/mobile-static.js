@@ -1,7 +1,7 @@
 const staticToggle2 = document.querySelector('#staticToggle2');
 const staticInfo2 = document.querySelector('#staticInfo2');
-const svgContainers2 = document.querySelectorAll('.svg-container');
-const progressContainers = document.querySelectorAll('.progress-container');
+const svgContainers2 = document.querySelectorAll('.svg-container-2');
+const progressContainers = document.querySelectorAll('.progress-container-2');
 
 staticToggle2.addEventListener('click', function () {
     toggleStaticInfo();
@@ -9,7 +9,7 @@ staticToggle2.addEventListener('click', function () {
 
 function toggleStaticInfo() {
     if (staticInfo2.classList.contains('max-h-0')) {
-        staticInfo2.classList.remove('max-h-0', 'hidden');
+        staticInfo2.classList.remove('max-h-0', 'hidden', 'p-4');
         staticInfo2.classList.add('max-h-[1000px]', 'p-0', 'mt-2.5');
         svgContainers2.forEach(container => container.classList.add('rotate-180'));
         startAnimations();

@@ -91,9 +91,14 @@
     #pass__btn {
         transition: all .3s;
     }
+    @media (max-width: 769px) {
+    #pass__btn {
+        width: 100%;
+    }
+}
 </style>
 
-<body class="">
+<body class="bg-white">
 
     <header class="lg:pt-8 bg-white">
         <div class="max-w-[1384px] px-3 mx-auto lg:flex hidden items-center justify-between">
@@ -123,7 +128,7 @@
                         </label>
                     </div>
                     <div id="search__menu"
-                        class="search_shadow hidden absolute bg-[#FCFCFC] top-[60px] max-w-[316px] w-full py-2.5 px-4 rounded-2xl">
+                        class="search_shadow hidden absolute bg-[#FCFCFC] top-[60px] max-w-[316px] w-full py-2.5 px-4 rounded-2xl z-50">
                         <p class="text-[#202020] font-bold text-xs mb-2">Top services🔥</p>
                         <div class="pb-2 border-b mb-2">
                             <a class="text-[#8F8F8F] font-medium text-[10px] p-1 border rounded-md" href="#">Social &
@@ -364,9 +369,9 @@
         })
     </script>
 
-    <section class="bg-[#F7F7F7] pt-3  md:pt-[15px] md:pb-[104px] pb-11 relative">
+    <section class="pt-3  md:pt-[15px] md:pb-[104px] pb-11 relative">
         <div class="max-w-[1402px] relative z-20 pt-5 md:pt-10 mx-auto px-5">
-            <div class="w-full  max-h-[271px] z-10 h-[271px] absolute left-0 top-0" style="
+            <div class="w-full  max-h-[271px] z-10 h-[271px] absolute left-0 top-0 rounded-3xl" style="
       background-image: url(./img/verification/verification__bg.png);
       background-size: cover;
       background-position: center center;
@@ -520,8 +525,13 @@
                                     Verified
                                 </p>
                             </div>
-                            <h2 class="font-bold text-xl text-[#202020] mb-[15px] pl-7">
+                            <h2 class="font-bold flex items-center gap-1 text-xl text-[#202020] mb-[15px] pl-7">
                                 James Kilroy
+                                <svg class="flex" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6663 11.3389C16.6663 15.5056 13.7497 17.5889 10.283 18.7973C10.1015 18.8588 9.90429 18.8558 9.72467 18.7889C6.24967 17.5889 3.33301 15.5056 3.33301 11.3389V5.50558C3.33301 5.28457 3.42081 5.07261 3.57709 4.91633C3.73337 4.76005 3.94533 4.67225 4.16634 4.67225C5.83301 4.67225 7.91634 3.67225 9.36634 2.40558C9.54289 2.25475 9.76747 2.17188 9.99967 2.17188C10.2319 2.17188 10.4565 2.25475 10.633 2.40558C12.0913 3.68058 14.1663 4.67225 15.833 4.67225C16.054 4.67225 16.266 4.76005 16.4223 4.91633C16.5785 5.07261 16.6663 5.28457 16.6663 5.50558V11.3389Z" stroke="#4790FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 10.4948L9.16667 12.1615L12.5 8.82812" stroke="#4790FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
                             </h2>
                             <p class="bg-[#EDF4FF] font-bold max-md:text-sm text-base text-[#575E6A] flex items-center jc  max-md:max-w-[260px] max-w-[275px] py-[11.5px] px-16 mb-4 
                     rounded-[100px] mx-auto">
@@ -604,7 +614,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="max-lg:hidden ml-5">
+                    <div class="max-lg:hidden ml-5 mt-20">
                         <p class="max-w-[344px] font-medium text-sm text-[#575E6A] mb-5">
                             Verification is recommended for all users of this resource - <span class="font-bold">both
                                 employers and freelancers.</span>
@@ -667,12 +677,12 @@
 
                     </div>
                 </div>
-                <div class="lg:hidden max-w-[449px] max-md:mx-auto ">
-                    <p class="max-w-[344px] font-medium text-sm text-[#575E6A] mb-5">
+                <div class="lg:hidden md:mx-auto ">
+                    <p class=" font-medium text-sm text-[#575E6A] mb-5">
                         Verification is recommended for all users of this resource - <span class="font-bold">both
                             employers and freelancers.</span>
                     </p>
-                    <p class="max-w-[376px] font-medium text-sm text-[#575E6A] mb-5">
+                    <p class=" font-medium text-sm text-[#575E6A] mb-5">
                         A verified user will have a special Identity <span class="font-bold">Verified icon</span>
                         <svg class="inline-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -703,16 +713,16 @@
                     <p class="font-medium text-sm text-[#575E6A] max-md:mb-6 mb-7">
                         This allows other users to <span class="font-bold">increase their trust</span> in the user.
                     </p>
-                    <label class="custom-checkbox mb-5">
+                    <label class="custom-checkbox mb-5 flex items-center ">
                         <input type="checkbox" />
                         <span class="checkmark"></span>
-                        <div class="max-w-[405px] max-md:text-xs">
+                        <div class="max-md:text-xs translate-y-1">
                             I confirm my consent to the processing and storage of personal data transmitted by me during
                             verification.
                         </div>
                     </label>
                     <button id="pass__btn"
-                        class="w-full hover:opacity-80 flex items-center justify-center md:max-w-[264px]  gap-2 rounded-xl font-medium text-base text-white px-[59px] py-[14px]"
+                        class=" hover:opacity-80 inline-flex items-center justify-center  gap-2 rounded-xl font-medium text-base text-white px-[59px] py-[14px]"
                         style="
             background: linear-gradient(90deg, #6AB8FF 0%, #DEF5FF 136.52%);
                 ">

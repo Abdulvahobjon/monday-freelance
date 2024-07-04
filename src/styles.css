@@ -4,8 +4,8 @@
 
 
 @font-face {
-    font-family: 'satoshi' ;
-    src: url('../fonts/Satoshi-Bold.woff2') ;
+    font-family: 'satoshi';
+    src: url('../fonts/Satoshi-Bold.woff2');
 }
 
 body {
@@ -66,12 +66,20 @@ body {
 .like-button svg path {
     transition: fill 0.3s ease, stroke 0.3s ease;
 }
-.service_shadow{
+
+.service_shadow {
     box-shadow: 0px 3.17px 31.73px 0px #0000000D;
 }
-.service_mobile{
+
+.service_mobile {
     box-shadow: 0px 4px 40px 0px #0000000D;
 }
-.verification_shadow{
-    background: linear-gradient(43.66deg, #FBFCFF 24.62%, #F2F5FD 69.53%, rgba(255, 255, 255, 0.69) 95.65%) ;
+
+.verification_shadow {
+    background: linear-gradient(43.66deg, #FBFCFF 24.62%, #F2F5FD 69.53%, rgba(255, 255, 255, 0.69) 95.65%);
+}
+
+.cardShadowActive{
+    box-shadow: 5px 10px 40px 2px #0000000D;
+    transition: all .5s;
 }

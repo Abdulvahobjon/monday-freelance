@@ -37,5 +37,7 @@ tab.forEach((response, index) => {
         response.style.boxShadow = 'none'  
     })
     tab[index].style.boxShadow = "5px 10px 40px 2px #0000000D"
+    tab[index].classList.add('bg-white')
+
   })
 })
