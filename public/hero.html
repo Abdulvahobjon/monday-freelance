@@ -11,13 +11,50 @@
 
 <body class="text-[#202020] bg-[#ECEEF4]">
   <section class="mb-4">
-    <div class="h-[229px] md:h-[260px] bg-cover bg-center" style="background-image: url(./img/banner.png)"></div>
+    <div class="h-[229px] md:h-[260px] bg-cover bg-center" style="background-image: url(./img/banner.png)">
+      <div class="max-w-[1400px] mx-auto px-5 relative">
+        <form class="absolute top-4 right-5" action="">
+          <input id="1" class="hidden" type="file" accept=".png, .jpg" />
+          <label class="py-[13px] px-[22px] flex items-center justify-center rounded-[12px] bg-[#FAFAFC] cursor-pointer gap-1.5 font-bold text-sm leading-5" for="1">
+
+            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.07013 17H12.9301C15.0001 17 15.8251 15.7325 15.9226 14.1875L16.3126 7.9925C16.4176 6.3725 15.1276 5 13.5001 5C13.0426 5 12.6226 4.7375 12.4126 4.3325L11.8726 3.245C11.5276 2.5625 10.6276 2 9.86263 2H8.14513C7.37263 2 6.47263 2.5625 6.12763 3.245L5.58763 4.3325C5.37763 4.7375 4.95763 5 4.50013 5C2.87263 5 1.58263 6.3725 1.68763 7.9925L2.07763 14.1875C2.16763 15.7325 3.00013 17 5.07013 17Z"
+                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.875 6.5H10.125" stroke="#575E6A" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M9 14C10.3425 14 11.4375 12.905 11.4375 11.5625C11.4375 10.22 10.3425 9.125 9 9.125C7.6575 9.125 6.5625 10.22 6.5625 11.5625C6.5625 12.905 7.6575 14 9 14Z"
+                stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Edit cover Image
+          </label>
+        </form>
+      </div>
+    </div>
+
     <div class="hidden max-w-[1400px] mx-auto px-5 lg:flex justify-between gap-2.5 -mt-[108px] mb-4">
       <div class="max-w-[985px] w-full bg-white rounded-3xl pt-3 pl-6 pb-[26px] pr-[38px] flex gap-[26px]">
         <div class="max-w-[248px] w-full -mt-11">
           <div class="flex items-center justify-center max-w-[248px] mb-4">
-            <div class="border-[5px] border-white w-[152px] rounded-full h-[152px]">
+            <div class="relative border-[5px] border-white w-[152px] rounded-full h-[152px]">
               <img class="object-cover w-full h-full rounded-full" src="./img/person.jpg" alt="" />
+              <form class="absolute bottom-0 right-0" action="">
+                <input id="1" class="hidden" type="file" accept=".png, .jpg" />
+                <label class="w-10 h-10 flex items-center justify-center rounded-full bg-[#FAFAFC] cursor-pointer "
+                  for="1">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.07013 16.5H12.9301C15.0001 16.5 15.8251 15.2325 15.9226 13.6875L16.3126 7.4925C16.4176 5.8725 15.1276 4.5 13.5001 4.5C13.0426 4.5 12.6226 4.2375 12.4126 3.8325L11.8726 2.745C11.5276 2.0625 10.6276 1.5 9.86263 1.5H8.14513C7.37263 1.5 6.47263 2.0625 6.12763 2.745L5.58763 3.8325C5.37763 4.2375 4.95763 4.5 4.50013 4.5C2.87263 4.5 1.58263 5.8725 1.68763 7.4925L2.07763 13.6875C2.16763 15.2325 3.00013 16.5 5.07013 16.5Z"
+                      stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.875 6H10.125" stroke="#575E6A" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M9 13.5C10.3425 13.5 11.4375 12.405 11.4375 11.0625C11.4375 9.72 10.3425 8.625 9 8.625C7.6575 8.625 6.5625 9.72 6.5625 11.0625C6.5625 12.405 7.6575 13.5 9 13.5Z"
+                      stroke="#575E6A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </label>
+              </form>
             </div>
           </div>
           <div class="px-3 pt-5 pb-2.5 bg-white rounded-3xl border border-[#F1F3F9]">
@@ -334,7 +371,7 @@
     <div class="px-3 pb-[15px] md:hidden">
       <div class="bg-[#FAFAFC] rounded-[20px] px-5 -mt-[114px] pb-4 mb-2.5">
         <div class="flex items-center justify-center mb-1 max-w-[112px] mx-auto">
-          <div class="border-[5px] -mt-[53px] border-white w-[112px] rounded-full h-[112px]">
+          <div class="relative border-[5px] -mt-[53px] border-white w-[112px] rounded-full h-[112px]">
             <img class="object-cover w-full h-full rounded-full" src="./img/person.jpg" alt="" />
           </div>
         </div>
@@ -654,14 +691,13 @@
         </div>
       </div>
     </div>
-    
   </section>
 
   <section class="pb-9">
-    <div class="max-w-[1400px] mx-auto px-5 ">
+    <div class="max-w-[1400px] mx-auto px-5">
       <div class="grid lg:grid-cols-5 gap-1.5 md:gap-4">
-    
-        <div id="serviceCard" class="flex items-center md:border-white border border-white bg-white md:bg-white py-4 lg:py-6 pr-4 lg:pr-2 pl-4 gap-2.5 rounded-xl md:opacity-65 cursor-pointer transition-all">
+        <div id="serviceCard"
+          class="flex items-center md:border-white border border-white bg-white md:bg-white py-4 lg:py-6 pr-4 lg:pr-2 pl-4 gap-2.5 rounded-xl md:opacity-65 cursor-pointer transition-all">
           <div class="w-[43px] h-[43px] flex items-center justify-center border border-[#0000001A] rounded-xl">
             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -674,16 +710,20 @@
           </div>
           <div>
             <h3 class="font-bold text-base leading-5 mb-0.5">Services</h3>
-            <p class="font-medium text-xs leading-4 text-[#9CA5B3]">Your current active services</p>
+            <p class="font-medium text-xs leading-4 text-[#9CA5B3]">
+              Your current active services
+            </p>
           </div>
           <button class="w-6 h-6 flex items-center justify-center lg:hidden ml-auto">
             <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
         </div>
 
-        <div id="serviceCard" class="flex items-center md:border-white border border-white bg-white md:bg-white py-4 lg:py-6 pr-4 lg:pr-2 pl-4 gap-2.5 rounded-xl md:opacity-65 cursor-pointer transition-all">
+        <div id="serviceCard"
+          class="flex items-center md:border-white border border-white bg-white md:bg-white py-4 lg:py-6 pr-4 lg:pr-2 pl-4 gap-2.5 rounded-xl md:opacity-65 cursor-pointer transition-all">
           <div class="w-[43px] h-[43px] flex items-center justify-center border border-[#0000001A] rounded-xl">
             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -696,16 +736,20 @@
           </div>
           <div>
             <h3 class="font-bold text-base leading-5 mb-0.5">Services</h3>
-            <p class="font-medium text-xs leading-4 text-[#9CA5B3]">Your current active services</p>
+            <p class="font-medium text-xs leading-4 text-[#9CA5B3]">
+              Your current active services
+            </p>
           </div>
           <button class="w-6 h-6 flex items-center justify-center lg:hidden ml-auto">
             <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
         </div>
 
-        <div id="serviceCard" class="flex items-center md:border-white border border-white bg-white md:bg-white py-4 lg:py-6 pr-4 lg:pr-2 pl-4 gap-2.5 rounded-xl md:opacity-65 cursor-pointer transition-all">
+        <div id="serviceCard"
+          class="flex items-center md:border-white border border-white bg-white md:bg-white py-4 lg:py-6 pr-4 lg:pr-2 pl-4 gap-2.5 rounded-xl md:opacity-65 cursor-pointer transition-all">
           <div class="w-[43px] h-[43px] flex items-center justify-center border border-[#0000001A] rounded-xl">
             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -718,16 +762,20 @@
           </div>
           <div>
             <h3 class="font-bold text-base leading-5 mb-0.5">Services</h3>
-            <p class="font-medium text-xs leading-4 text-[#9CA5B3]">Your current active services</p>
+            <p class="font-medium text-xs leading-4 text-[#9CA5B3]">
+              Your current active services
+            </p>
           </div>
           <button class="w-6 h-6 flex items-center justify-center lg:hidden ml-auto">
             <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
         </div>
 
-        <div id="serviceCard" class="flex items-center md:border-white border border-white bg-white md:bg-white py-4 lg:py-6 pr-4 lg:pr-2 pl-4 gap-2.5 rounded-xl md:opacity-65 cursor-pointer transition-all">
+        <div id="serviceCard"
+          class="flex items-center md:border-white border border-white bg-white md:bg-white py-4 lg:py-6 pr-4 lg:pr-2 pl-4 gap-2.5 rounded-xl md:opacity-65 cursor-pointer transition-all">
           <div class="w-[43px] h-[43px] flex items-center justify-center border border-[#0000001A] rounded-xl">
             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -740,16 +788,20 @@
           </div>
           <div>
             <h3 class="font-bold text-base leading-5 mb-0.5">Services</h3>
-            <p class="font-medium text-xs leading-4 text-[#9CA5B3]">Your current active services</p>
+            <p class="font-medium text-xs leading-4 text-[#9CA5B3]">
+              Your current active services
+            </p>
           </div>
           <button class="w-6 h-6 flex items-center justify-center lg:hidden ml-auto">
             <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
         </div>
-        
-        <div id="serviceCard" class="flex items-center md:border-white border border-[#AEB5BF] bg-[#F1F3F9] md:bg-white py-4 lg:py-6 pr-4 lg:pr-2 pl-4 gap-2.5 rounded-xl cursor-pointer transition-all">
+
+        <div id="serviceCard"
+          class="flex items-center md:border-white border border-[#AEB5BF] bg-[#F1F3F9] md:bg-white py-4 lg:py-6 pr-4 lg:pr-2 pl-4 gap-2.5 rounded-xl cursor-pointer transition-all">
           <div class="w-[43px] h-[43px] flex items-center justify-center border border-[#0000001A] rounded-xl">
             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -762,64 +814,58 @@
           </div>
           <div>
             <h3 class="font-bold text-base leading-5 mb-0.5">Services</h3>
-            <p class="font-medium text-xs leading-4 text-[#9CA5B3]">Your current active services</p>
+            <p class="font-medium text-xs leading-4 text-[#9CA5B3]">
+              Your current active services
+            </p>
           </div>
           <button class="w-6 h-6 flex items-center justify-center lg:hidden ml-auto">
             <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <path d="M1 1L5.5 5L10 1" stroke="#202020" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
         </div>
       </div>
-
-     
     </div>
   </section>
 
-
-
   <script>
-    let serviceCard = document.querySelectorAll("#serviceCard")
-    let sellectRadio = document.querySelectorAll("#sellectRadio")
-    serviceCard.forEach(function(item, index){
-      item.addEventListener('click' , function(){
-        serviceCard.forEach(function(item){
-          item.classList.add("md:opacity-65")
-          item.classList.remove("border-[#AEB5BF]") 
-          item.classList.remove("bg-[#F1F3F9]") 
-          item.classList.add("bg-white") 
-          item.classList.add("border-white") 
-        })
-        item.classList.remove('md:opacity-65')
-        item.classList.add("border-[#AEB5BF]") 
-        item.classList.add("bg-[#F1F3F9]") 
-        item.classList.remove("bg-white") 
-        item.classList.remove("border-white") 
-      })
-    })
-    sellectRadio.forEach(function(item, index){
-      item.addEventListener('click' , function(){
-        sellectRadio.forEach(function(item){
-          item.classList.remove("text-[#4790FF]")
-          item.classList.remove("bg-[#EDF4FF]")
-          item.classList.remove("border-[#F2F2F2]")
-          item.classList.add("border-[#FAFAFC]")
-          item.classList.add("bg-[#FAFAFC]")
-
-        
-
-
-
-        })
-        item.classList.add('text-[#4790FF]')
-        item.classList.add('bg-[#EDF4FF]')
-        item.classList.add('border-[#F2F2F2]')
-        item.classList.remove("border-[#FAFAFC]")
-        item.classList.remove("bg-[#FAFAFC]")
-
-       
-      })
-    })
+    let serviceCard = document.querySelectorAll("#serviceCard");
+    let sellectRadio = document.querySelectorAll("#sellectRadio");
+    serviceCard.forEach(function (item, index) {
+      item.addEventListener("click", function () {
+        serviceCard.forEach(function (item) {
+          item.classList.add("md:opacity-65");
+          item.classList.remove("border-[#AEB5BF]");
+          item.classList.remove("bg-[#F1F3F9]");
+          item.classList.add("bg-white");
+          item.classList.add("border-white");
+          item.classList.remove("cardShadowActive");
+        });
+        item.classList.remove("md:opacity-65");
+        item.classList.add("border-[#AEB5BF]");
+        item.classList.add("bg-[#F1F3F9]");
+        item.classList.remove("bg-white");
+        item.classList.remove("border-white");
+        item.classList.add("cardShadowActive");
+      });
+    });
+    sellectRadio.forEach(function (item, index) {
+      item.addEventListener("click", function () {
+        sellectRadio.forEach(function (item) {
+          item.classList.remove("text-[#4790FF]");
+          item.classList.remove("bg-[#EDF4FF]");
+          item.classList.remove("border-[#F2F2F2]");
+          item.classList.add("border-[#FAFAFC]");
+          item.classList.add("bg-[#FAFAFC]");
+        });
+        item.classList.add("text-[#4790FF]");
+        item.classList.add("bg-[#EDF4FF]");
+        item.classList.add("border-[#F2F2F2]");
+        item.classList.remove("border-[#FAFAFC]");
+        item.classList.remove("bg-[#FAFAFC]");
+      });
+    });
   </script>
 </body>
 
